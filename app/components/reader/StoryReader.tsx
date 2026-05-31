@@ -213,14 +213,17 @@ export default function StoryReader({ title, author, audioBasePath, chapters }: 
           titleLine={title}
           authorLine={author}
           isActive={currentIndex === 0}
-          onPlay={() => loadAndPlay(0)}
+          isPlaying={currentIndex === 0 && isPlaying}
+          onPlay={() => (currentIndex === 0 ? handlePlayPause() : loadAndPlay(0))}
           segmentRef={(el) => { segmentRefs.current[0] = el; }}
         />
 
         <ParagraphList
           segments={segments}
           currentIndex={currentIndex}
+          isPlaying={isPlaying}
           onPlay={loadAndPlay}
+          onPlayPause={handlePlayPause}
           onRef={(idx, el) => { segmentRefs.current[idx] = el; }}
           renderWords={renderWords}
         />

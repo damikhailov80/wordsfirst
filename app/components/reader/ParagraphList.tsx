@@ -5,7 +5,9 @@ import SegmentRow from "./SegmentRow";
 interface Props {
   segments: ReaderSegment[];
   currentIndex: number;
+  isPlaying: boolean;
   onPlay: (idx: number) => void;
+  onPlayPause: () => void;
   onRef: (idx: number, el: HTMLDivElement | null) => void;
   renderWords: (text: string) => ReactNode;
 }
@@ -13,7 +15,9 @@ interface Props {
 export default function ParagraphList({
   segments,
   currentIndex,
+  isPlaying,
   onPlay,
+  onPlayPause,
   onRef,
   renderWords,
 }: Props) {
@@ -21,11 +25,13 @@ export default function ParagraphList({
     <div className="space-y-5">
       {segments.slice(1).map((segment, i) => {
         const idx = i + 1;
+        const isActive = currentIndex === idx;
         return (
           <SegmentRow
             key={idx}
-            isActive={currentIndex === idx}
-            onPlay={() => onPlay(idx)}
+            isActive={isActive}
+            isPlaying={isActive && isPlaying}
+            onPlay={() => (isActive ? onPlayPause() : onPlay(idx))}
             segmentRef={(el) => onRef(idx, el)}
             ariaLabel={`Play segment ${idx}`}
           >

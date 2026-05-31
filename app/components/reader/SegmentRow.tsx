@@ -1,7 +1,10 @@
 import type { ReactNode } from "react";
+import PlayIcon from "@/app/components/icons/PlayIcon";
+import PauseIcon from "@/app/components/icons/PauseIcon";
 
 interface Props {
   isActive: boolean;
+  isPlaying?: boolean;
   onPlay: () => void;
   segmentRef?: (el: HTMLDivElement | null) => void;
   ariaLabel?: string;
@@ -12,6 +15,7 @@ interface Props {
 
 export default function SegmentRow({
   isActive,
+  isPlaying = false,
   onPlay,
   segmentRef,
   ariaLabel = "Play",
@@ -33,7 +37,7 @@ export default function SegmentRow({
           e.stopPropagation();
           onPlay();
         }}
-        aria-label={ariaLabel}
+        aria-label={isActive && isPlaying ? "Pause" : ariaLabel}
         className={`shrink-0 flex items-center justify-center rounded-full transition-colors ${
           isTitle ? "w-9 h-9" : "w-8 h-8 mt-0.5"
         } ${
@@ -42,13 +46,11 @@ export default function SegmentRow({
             : "bg-stone-200 text-stone-500 hover:bg-amber-400 hover:text-white"
         }`}
       >
-        <svg
-          className={isTitle ? "w-5 h-5" : "w-4 h-4"}
-          viewBox="0 0 24 24"
-          fill="currentColor"
-        >
-          <path d="M8 5v14l11-7z" />
-        </svg>
+        {isActive && isPlaying ? (
+          <PauseIcon className={isTitle ? "w-5 h-5" : "w-4 h-4"} />
+        ) : (
+          <PlayIcon className={isTitle ? "w-5 h-5" : "w-4 h-4"} />
+        )}
       </button>
       {children}
     </div>

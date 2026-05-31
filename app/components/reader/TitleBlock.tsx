@@ -4,6 +4,7 @@ interface Props {
   titleLine: string;
   authorLine: string;
   isActive: boolean;
+  isPlaying?: boolean;
   onPlay: () => void;
   segmentRef: (el: HTMLDivElement | null) => void;
 }
@@ -12,6 +13,7 @@ export default function TitleBlock({
   titleLine,
   authorLine,
   isActive,
+  isPlaying,
   onPlay,
   segmentRef,
 }: Props) {
@@ -19,6 +21,7 @@ export default function TitleBlock({
     <SegmentRow
       variant="title"
       isActive={isActive}
+      isPlaying={isPlaying}
       onPlay={onPlay}
       segmentRef={segmentRef}
       ariaLabel="Play title"

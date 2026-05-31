@@ -1,6 +1,8 @@
 "use client";
 
 import { type RefObject } from "react";
+import PlayIcon from "@/app/components/icons/PlayIcon";
+import PauseIcon from "@/app/components/icons/PauseIcon";
 
 interface Props {
   audioRef: RefObject<HTMLAudioElement | null>;
@@ -45,13 +47,9 @@ export default function AudioPlayerBar({
           className="rounded-full bg-amber-400 p-3 text-white hover:bg-amber-500 transition-colors shadow"
         >
           {isPlaying ? (
-            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
-            </svg>
+            <PauseIcon className="w-6 h-6" />
           ) : (
-            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M8 5v14l11-7z" />
-            </svg>
+            <PlayIcon className="w-6 h-6" />
           )}
         </button>
 
