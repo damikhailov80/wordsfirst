@@ -1,0 +1,30 @@
+---
+description: Do not leave comments in code
+alwaysApply: true
+---
+
+# No Code Comments
+
+Do not add comments to code. Write clear, self-explanatory code (descriptive names, small functions) instead of explaining it with comments.
+
+This applies to all comment forms:
+- Line comments (`//`)
+- Block comments (`/* */`)
+- JSDoc/doc comments (`/** */`)
+- JSX comments (`{/* */}`)
+
+```tsx
+// BAD
+// build the playable list
+const segments = useMemo(() => { ... }, []);
+
+{/* Prev */}
+<button onClick={onPrev} />
+
+// GOOD
+const segments = useMemo(() => { ... }, []);
+
+<button aria-label="Previous" onClick={onPrev} />
+```
+
+Exception: only keep a comment when explicitly requested by the user, or when it conveys a legally required notice (e.g. a license header).
