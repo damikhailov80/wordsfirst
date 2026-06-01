@@ -1,0 +1,191 @@
+[
+  {
+    "surface": "Betsy",
+    "lemma": "Betsy",
+    "entity_type": "PERSON",
+    "translation": "Бетси",
+    "description": "Жена рассказчика, путешественница"
+  },
+  {
+    "surface": "Queen Elizabeth",
+    "lemma": "Queen Elizabeth",
+    "entity_type": "OTHER",
+    "translation": "Королева Елизавета",
+    "description": "Трансатлантический пассажирский корабль"
+  },
+  {
+    "surface": "Europe",
+    "lemma": "Europe",
+    "entity_type": "LOCATION",
+    "translation": "Европа",
+    "description": "Континент в Северном полушарии"
+  },
+  {
+    "surface": "French",
+    "lemma": "French",
+    "entity_type": "LANGUAGE_PEOPLE",
+    "translation": "французский",
+    "description": "Язык и национальность Франции"
+  },
+  {
+    "surface": "British Parliament",
+    "lemma": "British Parliament",
+    "entity_type": "ORG",
+    "translation": "Британский парламент",
+    "description": "Законодательный орган Великобритании"
+  },
+  {
+    "surface": "American",
+    "lemma": "American",
+    "entity_type": "LANGUAGE_PEOPLE",
+    "translation": "американец",
+    "description": "Гражданин или уроженец США"
+  },
+  {
+    "surface": "United States",
+    "lemma": "United States",
+    "entity_type": "LOCATION",
+    "translation": "Соединённые Штаты",
+    "description": "Федеративная республика в Северной Америке"
+  },
+  {
+    "surface": "Senator Bridges",
+    "lemma": "Senator Bridges",
+    "entity_type": "PERSON",
+    "translation": "Сенатор Бриджес",
+    "description": "Американский сенатор, известный по кроссворду"
+  },
+  {
+    "surface": "Roland",
+    "lemma": "Roland",
+    "entity_type": "PERSON",
+    "translation": "Роланд",
+    "description": "Вымышленное имя художника Лотиса"
+  },
+  {
+    "surface": "Lautisse",
+    "lemma": "Lautisse",
+    "entity_type": "PERSON",
+    "translation": "Лотис",
+    "description": "Знаменитый художник, не писавший десять лет"
+  },
+  {
+    "surface": "Riviera",
+    "lemma": "Riviera",
+    "entity_type": "LOCATION",
+    "translation": "Ривьера",
+    "description": "Курортный регион на побережье Средиземного моря"
+  },
+  {
+    "surface": "New York",
+    "lemma": "New York",
+    "entity_type": "LOCATION",
+    "translation": "Нью-Йорк",
+    "description": "Крупнейший город в США"
+  },
+  {
+    "surface": "Tom Sawyer",
+    "lemma": "Tom Sawyer",
+    "entity_type": "PERSON",
+    "translation": "Том Сойер",
+    "description": "Литературный персонаж Марка Твена"
+  },
+  {
+    "surface": "Chappaqua",
+    "lemma": "Chappaqua",
+    "entity_type": "LOCATION",
+    "translation": "Чаппаква",
+    "description": "Город в штате Нью-Йорк, США"
+  },
+  {
+    "surface": "Gerston",
+    "lemma": "Gerston",
+    "entity_type": "PERSON",
+    "translation": "Герстон",
+    "description": "Скульптор, друг художника Лотиса"
+  },
+  {
+    "surface": "France",
+    "lemma": "France",
+    "entity_type": "LOCATION",
+    "translation": "Франция",
+    "description": "Страна в Западной Европе"
+  },
+  {
+    "surface": "Westchester",
+    "lemma": "Westchester",
+    "entity_type": "LOCATION",
+    "translation": "Вестчестер",
+    "description": "Округ в штате Нью-Йорк, США"
+  },
+  {
+    "surface": "Mr Vegaro",
+    "lemma": "Vegaro",
+    "entity_type": "PERSON",
+    "translation": "мистер Вегаро",
+    "description": "Владелец галереи Миллард"
+  },
+  {
+    "surface": "Millard Galleries",
+    "lemma": "Millard Galleries",
+    "entity_type": "ORG",
+    "translation": "Галереи Миллард",
+    "description": "Художественная галерея, торгующая произведениями"
+  },
+  {
+    "surface": "Widdicome Galleries",
+    "lemma": "Widdicome Galleries",
+    "entity_type": "ORG",
+    "translation": "Галереи Виддикомб",
+    "description": "Художественная галерея, конкурирующая за забор"
+  },
+  {
+    "surface": "Detroit",
+    "lemma": "Detroit",
+    "entity_type": "LOCATION",
+    "translation": "Детройт",
+    "description": "Город в штате Мичиган, США"
+  },
+  {
+    "surface": "Chicago",
+    "lemma": "Chicago",
+    "entity_type": "LOCATION",
+    "translation": "Чикаго",
+    "description": "Крупный город в штате Иллинойс, США"
+  },
+  {
+    "surface": "San Francisco",
+    "lemma": "San Francisco",
+    "entity_type": "LOCATION",
+    "translation": "Сан-Франциско",
+    "description": "Город на побережье Калифорнии, США"
+  },
+  {
+    "surface": "Miami",
+    "lemma": "Miami",
+    "entity_type": "LOCATION",
+    "translation": "Майами",
+    "description": "Город на побережье Флориды, США"
+  },
+  {
+    "surface": "Montreal",
+    "lemma": "Montreal",
+    "entity_type": "LOCATION",
+    "translation": "Монреаль",
+    "description": "Крупный город в провинции Квебек, Канада"
+  },
+  {
+    "surface": "Palmer Museum",
+    "lemma": "Palmer Museum",
+    "entity_type": "ORG",
+    "translation": "Музей Палмер",
+    "description": "Художественный музей в Нью-Йорке"
+  },
+  {
+    "surface": "H.A.Smith",
+    "lemma": "H.A. Smith",
+    "entity_type": "PERSON",
+    "translation": "Х.А. Смит",
+    "description": "Автор рассказа о заборе"
+  }
+]
