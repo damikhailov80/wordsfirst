@@ -1,7 +1,61 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Chapter } from "@/lib/stories/types";
+import type { Chapter, Entity, Idiom, PhrasalVerb } from "@/lib/stories/types";
+
+type SpanSource =
+  | { kind: "idiom"; data: Idiom }
+  | { kind: "phrasalVerb"; data: PhrasalVerb }
+  | { kind: "properName"; data: Entity };
+
+type EntitySpan = { text: string; source: SpanSource | null };
+
+function buildEntitySpans(text: string, idioms: Idiom[], phrasalVerbs: PhrasalVerb[], properNames: Entity[]): EntitySpan[] {
+  type Candidate = { surface: string; priority: number; source: SpanSource };
+  const candidates: Candidate[] = [
+    ...idioms.map((i) => ({ surface: i.surface, priority: 0, source: { kind: "idiom" as const, data: i } })),
+    ...phrasalVerbs.map((p) => ({ surface: p.surface, priority: 1, source: { kind: "phrasalVerb" as const, data: p } })),
+    ...properNames.map((p) => ({ surface: p.surface, priority: 2, source: { kind: "properName" as const, data: p } })),
+  ];
+  const sorted = [...candidates].sort((a, b) =>
+    a.priority !== b.priority ? a.priority - b.priority : b.surface.length - a.surface.length
+  );
+
+  const isWordChar = (ch: string) => /[A-Za-z0-9]/.test(ch);
+
+  const matches: { start: number; end: number; source: SpanSource }[] = [];
+  for (const candidate of sorted) {
+    let idx = 0;
+    while (idx < text.length) {
+      const pos = text.indexOf(candidate.surface, idx);
+      if (pos === -1) break;
+      const end = pos + candidate.surface.length;
+      const before = pos === 0 ? "" : text[pos - 1];
+      const after = end >= text.length ? "" : text[end];
+      const atWordBoundary = !isWordChar(before) && !isWordChar(after);
+      const overlaps = matches.some((m) => pos < m.end && end > m.start);
+      if (atWordBoundary && !overlaps) {
+        matches.push({ start: pos, end, source: candidate.source });
+      }
+      idx = pos + 1;
+    }
+  }
+  matches.sort((a, b) => a.start - b.start);
+
+  const spans: EntitySpan[] = [];
+  let cursor = 0;
+  for (const match of matches) {
+    if (cursor < match.start) {
+      spans.push({ text: text.slice(cursor, match.start), source: null });
+    }
+    spans.push({ text: text.slice(match.start, match.end), source: match.source });
+    cursor = match.end;
+  }
+  if (cursor < text.length) {
+    spans.push({ text: text.slice(cursor), source: null });
+  }
+  return spans;
+}
 import KeyboardHint from "@/app/components/KeyboardHint";
 import AudioPlayerBar from "@/app/components/AudioPlayerBar";
 import TitleBlock from "./TitleBlock";
@@ -19,9 +73,12 @@ interface Props {
   author: string;
   audioBasePath: string;
   chapters: Chapter[];
+  properNames?: Entity[];
+  idioms?: Idiom[];
+  phrasalVerbs?: PhrasalVerb[];
 }
 
-export default function StoryReader({ title, author, audioBasePath, chapters }: Props) {
+export default function StoryReader({ title, author, audioBasePath, chapters, properNames, idioms, phrasalVerbs }: Props) {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   const [isPlaying, setIsPlaying] = useState(false);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
@@ -94,13 +151,6 @@ export default function StoryReader({ title, author, audioBasePath, chapters }: 
       setIsPlaying(true);
     }
   }, [currentIndex, isPlaying]);
-
-  const openTooltip = (word: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    const clean = word.replace(/[^a-zA-Zа-яА-ЯёЁ'-]/g, "");
-    if (!clean) return;
-    setTooltip({ word: clean, x: e.clientX, y: e.clientY });
-  };
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -192,19 +242,102 @@ export default function StoryReader({ title, author, audioBasePath, chapters }: 
     return () => document.removeEventListener("mousedown", onMouseDown);
   }, [tooltip]);
 
-  const renderWords = (text: string) =>
-    text.split(/(\s+)/).map((token, i) => {
-      if (/^\s+$/.test(token)) return token;
-      return (
-        <span
-          key={i}
-          onClick={(e) => openTooltip(token, e)}
-          className="cursor-pointer hover:underline hover:decoration-dotted hover:text-amber-700 transition-colors"
-        >
-          {token}
-        </span>
-      );
-    });
+  const renderWords = (text: string) => {
+    const spans = buildEntitySpans(text, idioms ?? [], phrasalVerbs ?? [], properNames ?? []);
+    const nodes: React.ReactNode[] = [];
+    let key = 0;
+
+    for (const span of spans) {
+      if (span.source) {
+        if (span.source.kind === "idiom") {
+          const idiom = span.source.data;
+          nodes.push(
+            <span
+              key={key++}
+              onClick={(e) => {
+                e.stopPropagation();
+                setTooltip({
+                  word: idiom.surface,
+                  x: e.clientX,
+                  y: e.clientY,
+                  translation: idiom.contextual_sense,
+                  lemma: idiom.lemma,
+                  sense: idiom.sense,
+                });
+              }}
+              className="cursor-pointer underline decoration-dotted decoration-teal-500 text-teal-700 hover:text-teal-800 transition-colors"
+            >
+              {span.text}
+            </span>
+          );
+        } else if (span.source.kind === "phrasalVerb") {
+          const pv = span.source.data;
+          nodes.push(
+            <span
+              key={key++}
+              onClick={(e) => {
+                e.stopPropagation();
+                setTooltip({
+                  word: pv.surface,
+                  x: e.clientX,
+                  y: e.clientY,
+                  translation: pv.contextual_sense,
+                  lemma: pv.lemma,
+                  sense: pv.sense,
+                });
+              }}
+              className="cursor-pointer underline decoration-dotted decoration-violet-500 text-violet-700 hover:text-violet-800 transition-colors"
+            >
+              {span.text}
+            </span>
+          );
+        } else {
+          const entity = span.source.data;
+          nodes.push(
+            <span
+              key={key++}
+              onClick={(e) => {
+                e.stopPropagation();
+                setTooltip({
+                  word: entity.surface,
+                  x: e.clientX,
+                  y: e.clientY,
+                  translation: entity.translation,
+                  description: entity.description,
+                });
+              }}
+              className="cursor-pointer underline decoration-dotted decoration-amber-500 text-amber-700 hover:text-amber-800 transition-colors"
+            >
+              {span.text}
+            </span>
+          );
+        }
+      } else {
+        for (const token of span.text.split(/(\s+)/)) {
+          if (/^\s+$/.test(token)) {
+            nodes.push(token);
+            key++;
+          } else {
+            nodes.push(
+              <span
+                key={key++}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  const clean = token.replace(/[^a-zA-Zа-яА-ЯёЁ'.-]/g, "");
+                  if (clean) setTooltip({ word: clean, x: e.clientX, y: e.clientY });
+                }}
+                className="cursor-pointer hover:underline hover:decoration-dotted hover:text-amber-700 transition-colors"
+              >
+                {token}
+              </span>
+            );
+          }
+        }
+      }
+    }
+
+    return nodes;
+  };
 
   return (
     <div className="min-h-screen bg-stone-50 pb-28" onClick={() => setTooltip(null)}>

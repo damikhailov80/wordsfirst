@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync } from "fs";
 import { resolve, dirname, basename, extname } from "path";
 import { fileURLToPath } from "url";
 
@@ -7,7 +7,7 @@ const url = "https://api.anthropic.com/v1/messages";
 
 const inputPath = process.argv[2];
 if (!inputPath) {
-  console.error("Usage: tsx test-anthropic.mts <path-to-text-file>");
+  console.error("Usage: tsx find-proper-names.mts <path-to-text-file>");
   process.exit(1);
 }
 
@@ -86,9 +86,10 @@ if (!response.ok) {
 const responseText = "[" + (data.content?.[0]?.text ?? "]");
 const entities = JSON.parse(responseText);
 
-const dir = dirname(absoluteInputPath);
 const nameWithoutExt = basename(absoluteInputPath, extname(absoluteInputPath));
-const outputPath = resolve(dir, `${nameWithoutExt}.entities.json`);
+const outDir = resolve(scriptDir, "out");
+mkdirSync(outDir, { recursive: true });
+const outputPath = resolve(outDir, `${nameWithoutExt}.proper-names.json`);
 
 writeFileSync(outputPath, JSON.stringify(entities, null, 2), "utf-8");
 console.log(`Saved ${entities.length} entities to ${outputPath}`);
