@@ -2,26 +2,58 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Chapter, Entity } from "@/lib/stories/types";
+import pronounsData from "@/data/vocabulary/pronouns.json";
 
-type SpanSource = { kind: "properName"; data: Entity };
+export type PronounSense = {
+  translation: string;
+  context: string;
+  context_translation: string;
+};
+
+export type PronounEntry = {
+  lemma: string;
+  type?: string;
+  gender?: string;
+  senses: PronounSense[];
+  forms?: { form: string; relation: string }[];
+};
+
+type SpanSource =
+  | { kind: "properName"; data: Entity }
+  | { kind: "pronoun"; entry: PronounEntry };
 
 type EntitySpan = { text: string; source: SpanSource | null };
 
-function buildEntitySpans(text: string, properNames: Entity[]): EntitySpan[] {
-  type Candidate = { surface: string; source: SpanSource };
-  const candidates: Candidate[] = properNames.map((p) => ({
+function buildEntitySpans(text: string, properNames: Entity[], pronounEntries: PronounEntry[]): EntitySpan[] {
+  type Candidate = { surface: string; source: SpanSource; caseInsensitive?: boolean };
+
+  const properNameCandidates: Candidate[] = properNames.map((p) => ({
     surface: p.surface,
     source: { kind: "properName" as const, data: p },
   }));
+
+  const pronounCandidates: Candidate[] = pronounEntries.flatMap((entry) => {
+    const surfaces = [entry.lemma, ...(entry.forms?.map((f) => f.form) ?? [])];
+    return surfaces.map((surface) => ({
+      surface,
+      source: { kind: "pronoun" as const, entry },
+      caseInsensitive: true,
+    }));
+  });
+
+  const candidates: Candidate[] = [...properNameCandidates, ...pronounCandidates];
   const sorted = [...candidates].sort((a, b) => b.surface.length - a.surface.length);
 
   const isWordChar = (ch: string) => /[A-Za-z0-9]/.test(ch);
+  const lowerText = text.toLowerCase();
 
   const matches: { start: number; end: number; source: SpanSource }[] = [];
   for (const candidate of sorted) {
+    const searchText = candidate.caseInsensitive ? lowerText : text;
+    const searchSurface = candidate.caseInsensitive ? candidate.surface.toLowerCase() : candidate.surface;
     let idx = 0;
     while (idx < text.length) {
-      const pos = text.indexOf(candidate.surface, idx);
+      const pos = searchText.indexOf(searchSurface, idx);
       if (pos === -1) break;
       const end = pos + candidate.surface.length;
       const before = pos === 0 ? "" : text[pos - 1];
@@ -50,6 +82,8 @@ function buildEntitySpans(text: string, properNames: Entity[]): EntitySpan[] {
   }
   return spans;
 }
+
+const pronouns = pronounsData as PronounEntry[];
 import KeyboardHint from "@/app/components/KeyboardHint";
 import AudioPlayerBar from "@/app/components/AudioPlayerBar";
 import TitleBlock from "./TitleBlock";
@@ -235,12 +269,12 @@ export default function StoryReader({ title, author, audioBasePath, chapters, pr
   }, [tooltip]);
 
   const renderWords = (text: string) => {
-    const spans = buildEntitySpans(text, properNames ?? []);
+    const spans = buildEntitySpans(text, properNames ?? [], pronouns);
     const nodes: React.ReactNode[] = [];
     let key = 0;
 
     for (const span of spans) {
-      if (span.source) {
+      if (span.source?.kind === "properName") {
         const entity = span.source.data;
         nodes.push(
           <span
@@ -256,6 +290,27 @@ export default function StoryReader({ title, author, audioBasePath, chapters, pr
               });
             }}
             className="cursor-pointer underline decoration-dotted decoration-amber-500 text-amber-700 hover:text-amber-800 transition-colors"
+          >
+            {span.text}
+          </span>
+        );
+      } else if (span.source?.kind === "pronoun") {
+        const entry = span.source.entry;
+        const isInflected = span.text.toLowerCase() !== entry.lemma.toLowerCase();
+        nodes.push(
+          <span
+            key={key++}
+            onClick={(e) => {
+              e.stopPropagation();
+              setTooltip({
+                word: span.text,
+                x: e.clientX,
+                y: e.clientY,
+                lemma: isInflected ? entry.lemma : undefined,
+                pronounSenses: entry.senses,
+              });
+            }}
+            className="cursor-pointer underline decoration-dotted decoration-sky-400 text-sky-700 hover:text-sky-800 transition-colors"
           >
             {span.text}
           </span>

@@ -1,0 +1,311 @@
+[
+  {
+    "lemma": "I",
+    "senses": [
+      {
+        "translation": "я",
+        "context": "I was walking around the deck",
+        "context_translation": "Я шёл по палубе"
+      }
+    ]
+  },
+  {
+    "lemma": "me",
+    "senses": [
+      {
+        "translation": "меня / мне",
+        "context": "He gave me a very angry look",
+        "context_translation": "Он бросил на меня очень сердитый взгляд"
+      }
+    ]
+  },
+  {
+    "lemma": "my",
+    "type": "possessive pronoun",
+    "senses": [
+      {
+        "translation": "мой / моя / моё / мои",
+        "context": "I am very proud of my fence",
+        "context_translation": "Я очень горжусь моим забором"
+      }
+    ],
+    "forms": [
+      {
+        "form": "mine",
+        "relation": "possessive_pronoun"
+      }
+    ]
+  },
+  {
+    "lemma": "myself",
+    "type": "reflexive pronoun",
+    "senses": [
+      {
+        "translation": "сам / себя",
+        "context": "I built the fence myself",
+        "context_translation": "Я сам построил забор"
+      }
+    ]
+  },
+  {
+    "lemma": "we",
+    "senses": [
+      {
+        "translation": "мы",
+        "context": "We played our favourite game",
+        "context_translation": "Мы играли в нашу любимую игру"
+      }
+    ]
+  },
+  {
+    "lemma": "us",
+    "senses": [
+      {
+        "translation": "нас / нам",
+        "context": "She told us that Lautisse was the most famous painter",
+        "context_translation": "Она рассказала нам, что Лотисс — самый известный художник"
+      }
+    ]
+  },
+  {
+    "lemma": "our",
+    "type": "possessive pronoun",
+    "senses": [
+      {
+        "translation": "наш / наша / наше / наши",
+        "context": "Lautisse came to our place in the country",
+        "context_translation": "Лотисс приехал к нам в загородный дом"
+      }
+    ],
+    "forms": [
+      {
+        "form": "ours",
+        "relation": "possessive_pronoun"
+      }
+    ]
+  },
+  {
+    "lemma": "ourselves",
+    "type": "reflexive pronoun",
+    "senses": [
+      {
+        "translation": "сами / себя",
+        "context": "We enjoyed ourselves on the ship",
+        "context_translation": "Мы хорошо провели время на корабле"
+      }
+    ]
+  },
+  {
+    "lemma": "you",
+    "senses": [
+      {
+        "translation": "ты / вы",
+        "context": "You are an American?",
+        "context_translation": "Вы американец?"
+      }
+    ]
+  },
+  {
+    "lemma": "your",
+    "type": "possessive pronoun",
+    "senses": [
+      {
+        "translation": "твой / ваш",
+        "context": "I'd like to buy your fence",
+        "context_translation": "Я хотел бы купить ваш забор"
+      }
+    ],
+    "forms": [
+      {
+        "form": "yours",
+        "relation": "possessive_pronoun"
+      }
+    ]
+  },
+  {
+    "lemma": "yourself",
+    "type": "reflexive pronoun",
+    "senses": [
+      {
+        "translation": "сам / себя",
+        "context": "Did you enjoy yourself?",
+        "context_translation": "Тебе понравилось?"
+      }
+    ],
+    "forms": [
+      {
+        "form": "yourselves",
+        "relation": "reflexive_plural"
+      }
+    ]
+  },
+  {
+    "lemma": "he",
+    "gender": "masculine",
+    "senses": [
+      {
+        "translation": "он",
+        "context": "He raised his head and gave me an angry look",
+        "context_translation": "Он поднял голову и бросил на меня сердитый взгляд"
+      }
+    ]
+  },
+  {
+    "lemma": "him",
+    "gender": "masculine",
+    "senses": [
+      {
+        "translation": "его / ему",
+        "context": "I asked him whether he had had breakfast",
+        "context_translation": "Я спросил его, завтракал ли он"
+      }
+    ]
+  },
+  {
+    "lemma": "his",
+    "type": "possessive pronoun",
+    "gender": "masculine",
+    "senses": [
+      {
+        "translation": "его",
+        "context": "He said his name was Roland",
+        "context_translation": "Он сказал, что его имя Роланд"
+      }
+    ]
+  },
+  {
+    "lemma": "himself",
+    "type": "reflexive pronoun",
+    "gender": "masculine",
+    "senses": [
+      {
+        "translation": "сам / себя",
+        "context": "He introduced himself after a pause",
+        "context_translation": "Он представился после паузы"
+      }
+    ]
+  },
+  {
+    "lemma": "she",
+    "gender": "feminine",
+    "senses": [
+      {
+        "translation": "она",
+        "context": "She told us that Lautisse had stopped painting",
+        "context_translation": "Она рассказала нам, что Лотисс перестал рисовать"
+      }
+    ]
+  },
+  {
+    "lemma": "her",
+    "gender": "feminine",
+    "senses": [
+      {
+        "translation": "её / ей",
+        "context": "He asked her to come with him",
+        "context_translation": "Он попросил её пойти с ним"
+      }
+    ],
+    "forms": [
+      {
+        "form": "hers",
+        "relation": "possessive_pronoun"
+      }
+    ]
+  },
+  {
+    "lemma": "herself",
+    "type": "reflexive pronoun",
+    "gender": "feminine",
+    "senses": [
+      {
+        "translation": "сама / себя",
+        "context": "She did it herself",
+        "context_translation": "Она сделала это сама"
+      }
+    ]
+  },
+  {
+    "lemma": "it",
+    "gender": "neuter",
+    "senses": [
+      {
+        "translation": "оно / это",
+        "context": "I finished it — the whole fence",
+        "context_translation": "Я закончил его — весь забор"
+      }
+    ]
+  },
+  {
+    "lemma": "its",
+    "type": "possessive pronoun",
+    "gender": "neuter",
+    "senses": [
+      {
+        "translation": "его / её",
+        "context": "A bear with a brush in its mouth",
+        "context_translation": "Медведь с кистью в его пасти"
+      }
+    ]
+  },
+  {
+    "lemma": "itself",
+    "type": "reflexive pronoun",
+    "gender": "neuter",
+    "senses": [
+      {
+        "translation": "само / себя",
+        "context": "The fence will not paint itself",
+        "context_translation": "Забор сам себя не покрасит"
+      }
+    ]
+  },
+  {
+    "lemma": "they",
+    "senses": [
+      {
+        "translation": "они",
+        "context": "They wanted to know everything about the great man",
+        "context_translation": "Они хотели знать всё о великом человеке"
+      }
+    ]
+  },
+  {
+    "lemma": "them",
+    "senses": [
+      {
+        "translation": "их / им",
+        "context": "I told them to come back in three days",
+        "context_translation": "Я сказал им прийти через три дня"
+      }
+    ]
+  },
+  {
+    "lemma": "their",
+    "type": "possessive pronoun",
+    "senses": [
+      {
+        "translation": "их",
+        "context": "The three men stood around me, shouting at each other",
+        "context_translation": "Трое мужчин стояли вокруг меня, крича друг на друга"
+      }
+    ],
+    "forms": [
+      {
+        "form": "theirs",
+        "relation": "possessive_pronoun"
+      }
+    ]
+  },
+  {
+    "lemma": "themselves",
+    "type": "reflexive pronoun",
+    "senses": [
+      {
+        "translation": "сами / себя",
+        "context": "The two men introduced themselves",
+        "context_translation": "Двое мужчин представились"
+      }
+    ]
+  }
+]
