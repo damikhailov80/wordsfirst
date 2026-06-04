@@ -1,25 +1,19 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Chapter, Entity, Idiom, PhrasalVerb } from "@/lib/stories/types";
+import type { Chapter, Entity } from "@/lib/stories/types";
 
-type SpanSource =
-  | { kind: "idiom"; data: Idiom }
-  | { kind: "phrasalVerb"; data: PhrasalVerb }
-  | { kind: "properName"; data: Entity };
+type SpanSource = { kind: "properName"; data: Entity };
 
 type EntitySpan = { text: string; source: SpanSource | null };
 
-function buildEntitySpans(text: string, idioms: Idiom[], phrasalVerbs: PhrasalVerb[], properNames: Entity[]): EntitySpan[] {
-  type Candidate = { surface: string; priority: number; source: SpanSource };
-  const candidates: Candidate[] = [
-    ...idioms.map((i) => ({ surface: i.surface, priority: 0, source: { kind: "idiom" as const, data: i } })),
-    ...phrasalVerbs.map((p) => ({ surface: p.surface, priority: 1, source: { kind: "phrasalVerb" as const, data: p } })),
-    ...properNames.map((p) => ({ surface: p.surface, priority: 2, source: { kind: "properName" as const, data: p } })),
-  ];
-  const sorted = [...candidates].sort((a, b) =>
-    a.priority !== b.priority ? a.priority - b.priority : b.surface.length - a.surface.length
-  );
+function buildEntitySpans(text: string, properNames: Entity[]): EntitySpan[] {
+  type Candidate = { surface: string; source: SpanSource };
+  const candidates: Candidate[] = properNames.map((p) => ({
+    surface: p.surface,
+    source: { kind: "properName" as const, data: p },
+  }));
+  const sorted = [...candidates].sort((a, b) => b.surface.length - a.surface.length);
 
   const isWordChar = (ch: string) => /[A-Za-z0-9]/.test(ch);
 
@@ -74,11 +68,9 @@ interface Props {
   audioBasePath: string;
   chapters: Chapter[];
   properNames?: Entity[];
-  idioms?: Idiom[];
-  phrasalVerbs?: PhrasalVerb[];
 }
 
-export default function StoryReader({ title, author, audioBasePath, chapters, properNames, idioms, phrasalVerbs }: Props) {
+export default function StoryReader({ title, author, audioBasePath, chapters, properNames }: Props) {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   const [isPlaying, setIsPlaying] = useState(false);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
@@ -243,75 +235,31 @@ export default function StoryReader({ title, author, audioBasePath, chapters, pr
   }, [tooltip]);
 
   const renderWords = (text: string) => {
-    const spans = buildEntitySpans(text, idioms ?? [], phrasalVerbs ?? [], properNames ?? []);
+    const spans = buildEntitySpans(text, properNames ?? []);
     const nodes: React.ReactNode[] = [];
     let key = 0;
 
     for (const span of spans) {
       if (span.source) {
-        if (span.source.kind === "idiom") {
-          const idiom = span.source.data;
-          nodes.push(
-            <span
-              key={key++}
-              onClick={(e) => {
-                e.stopPropagation();
-                setTooltip({
-                  word: idiom.surface,
-                  x: e.clientX,
-                  y: e.clientY,
-                  translation: idiom.contextual_sense,
-                  lemma: idiom.lemma,
-                  sense: idiom.sense,
-                });
-              }}
-              className="cursor-pointer underline decoration-dotted decoration-teal-500 text-teal-700 hover:text-teal-800 transition-colors"
-            >
-              {span.text}
-            </span>
-          );
-        } else if (span.source.kind === "phrasalVerb") {
-          const pv = span.source.data;
-          nodes.push(
-            <span
-              key={key++}
-              onClick={(e) => {
-                e.stopPropagation();
-                setTooltip({
-                  word: pv.surface,
-                  x: e.clientX,
-                  y: e.clientY,
-                  translation: pv.contextual_sense,
-                  lemma: pv.lemma,
-                  sense: pv.sense,
-                });
-              }}
-              className="cursor-pointer underline decoration-dotted decoration-violet-500 text-violet-700 hover:text-violet-800 transition-colors"
-            >
-              {span.text}
-            </span>
-          );
-        } else {
-          const entity = span.source.data;
-          nodes.push(
-            <span
-              key={key++}
-              onClick={(e) => {
-                e.stopPropagation();
-                setTooltip({
-                  word: entity.surface,
-                  x: e.clientX,
-                  y: e.clientY,
-                  translation: entity.translation,
-                  description: entity.description,
-                });
-              }}
-              className="cursor-pointer underline decoration-dotted decoration-amber-500 text-amber-700 hover:text-amber-800 transition-colors"
-            >
-              {span.text}
-            </span>
-          );
-        }
+        const entity = span.source.data;
+        nodes.push(
+          <span
+            key={key++}
+            onClick={(e) => {
+              e.stopPropagation();
+              setTooltip({
+                word: entity.surface,
+                x: e.clientX,
+                y: e.clientY,
+                translation: entity.translation,
+                description: entity.description,
+              });
+            }}
+            className="cursor-pointer underline decoration-dotted decoration-amber-500 text-amber-700 hover:text-amber-800 transition-colors"
+          >
+            {span.text}
+          </span>
+        );
       } else {
         for (const token of span.text.split(/(\s+)/)) {
           if (/^\s+$/.test(token)) {

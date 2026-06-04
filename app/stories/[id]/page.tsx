@@ -21,8 +21,6 @@ export default async function StoryPage({ params }: PageProps) {
       audioBasePath={story.audioBasePath}
       chapters={story.chapters}
       properNames={story.properNames}
-      idioms={story.idioms}
-      phrasalVerbs={story.phrasalVerbs}
     />
   );
 }

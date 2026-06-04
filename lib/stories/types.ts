@@ -18,23 +18,7 @@ export interface Entity {
   description: string;
 }
 
-export interface Idiom {
-  surface: string;
-  lemma: string;
-  sense: string;
-  contextual_sense: string;
-}
-
-export interface PhrasalVerb {
-  surface: string;
-  lemma: string;
-  sense: string;
-  contextual_sense: string;
-}
-
 export interface StoryDetail extends Omit<StorySummary, "chaptersAmount"> {
   chapters: Chapter[];
   properNames?: Entity[];
-  idioms?: Idiom[];
-  phrasalVerbs?: PhrasalVerb[];
 }

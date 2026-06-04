@@ -8,8 +8,6 @@ alwaysApply: true
 The scripts in `scripts/vocabulary/` that call the Anthropic API cost real money on every run. You are FORBIDDEN from executing them yourself.
 
 This applies to (any script that hits `https://api.anthropic.com`), including:
-- `scripts/vocabulary/find-phrasal-verbs.mts`
-- `scripts/vocabulary/find-idioms.mts`
 - `scripts/vocabulary/find-proper-names.mts`
 - `scripts/vocabulary/to-lemma-forms.mts`
 
@@ -17,5 +15,3 @@ Rules:
 - NEVER run these scripts via `node`, `tsx`, or any other command, even to verify a change.
 - You MAY edit these scripts, read them, and reason about them.
 - After making changes, ask the USER to run the script themselves and report the output.
-
-The offline script `scripts/vocabulary/find-phrasal-verb-candidates.mts` does NOT call the API and is safe to run.
