@@ -9,7 +9,7 @@ interface Props {
   onPlay: (idx: number) => void;
   onPlayPause: () => void;
   onRef: (idx: number, el: HTMLDivElement | null) => void;
-  renderWords: (text: string) => ReactNode;
+  renderWords: (text: string, chapterIndex: number) => ReactNode;
 }
 
 export default function ParagraphList({
@@ -36,7 +36,7 @@ export default function ParagraphList({
             ariaLabel={`Play segment ${idx}`}
           >
             <p className="text-base leading-relaxed text-stone-800">
-              {renderWords(segment.text)}
+              {renderWords(segment.text, i)}
             </p>
           </SegmentRow>
         );

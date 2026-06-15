@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Chapter, Entity } from "@/lib/stories/types";
+import type { Chapter, Entity, VocabularyEntry } from "@/lib/stories/types";
 
 type SpanSource = { kind: "properName"; data: Entity };
 
@@ -71,9 +71,10 @@ interface Props {
   audioBasePath: string;
   chapters: Chapter[];
   properNames?: Entity[];
+  vocabulary?: VocabularyEntry[];
 }
 
-export default function StoryReader({ title, author, audioBasePath, chapters, properNames }: Props) {
+export default function StoryReader({ title, author, audioBasePath, chapters, properNames, vocabulary }: Props) {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   const [isPlaying, setIsPlaying] = useState(false);
   const [tooltip, setTooltip] = useState<TooltipState | null>(null);
@@ -237,7 +238,17 @@ export default function StoryReader({ title, author, audioBasePath, chapters, pr
     return () => document.removeEventListener("mousedown", onMouseDown);
   }, [tooltip]);
 
-  const renderWords = (text: string) => {
+  const vocabMap = useMemo(() => {
+    if (!vocabulary) return null;
+    const map = new Map<string, VocabularyEntry>();
+    for (const entry of vocabulary) {
+      const key = entry.surface.toLowerCase();
+      if (!map.has(key)) map.set(key, entry);
+    }
+    return map;
+  }, [vocabulary]);
+
+  const renderWords = (text: string, chapterIndex: number) => {
     const spans = buildEntitySpans(text, properNames ?? []);
     const nodes: React.ReactNode[] = [];
     let key = 0;
@@ -269,19 +280,46 @@ export default function StoryReader({ title, author, audioBasePath, chapters, pr
             nodes.push(token);
             key++;
           } else {
-            nodes.push(
-              <span
-                key={key++}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  const clean = token.replace(/[^a-zA-Zа-яА-ЯёЁ'.-]/g, "");
-                  if (clean) setTooltip({ word: clean, x: e.clientX, y: e.clientY });
-                }}
-                className="cursor-pointer hover:underline hover:decoration-dotted hover:text-amber-700 transition-colors"
-              >
-                {token}
-              </span>
-            );
+            const clean = token.replace(/[^a-zA-Zа-яА-ЯёЁ'.-]/g, "");
+            const vocabEntry = chapterIndex === 0 ? vocabMap?.get(clean.toLowerCase()) : undefined;
+            if (vocabEntry) {
+              nodes.push(
+                <span
+                  key={key++}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setTooltip({
+                      word: vocabEntry.surface,
+                      x: e.clientX,
+                      y: e.clientY,
+                      translation: vocabEntry.translation,
+                      lemma: vocabEntry.lemma,
+                      lemma_type: vocabEntry.type,
+                      lemma_translation: vocabEntry.lemma_translation,
+                      sense: vocabEntry.sense,
+                      context: vocabEntry.context,
+                      context_translation: vocabEntry.context_translation,
+                    });
+                  }}
+                  className="cursor-pointer underline decoration-dotted decoration-sky-400 text-sky-700 hover:text-sky-800 transition-colors"
+                >
+                  {token}
+                </span>
+              );
+            } else {
+              nodes.push(
+                <span
+                  key={key++}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    if (clean) setTooltip({ word: clean, x: e.clientX, y: e.clientY });
+                  }}
+                  className="cursor-pointer hover:underline hover:decoration-dotted hover:text-amber-700 transition-colors"
+                >
+                  {token}
+                </span>
+              );
+            }
           }
         }
       }

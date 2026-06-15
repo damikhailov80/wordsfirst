@@ -34,13 +34,15 @@ Given an English sentence or paragraph, analyse every word token and return a si
   "context":             short clause or phrase (5–10 words) from the input that contains this word,
   "context_translation": Russian translation of that clause,
   "lemma":               dictionary base form (bare infinitive for verbs; singular for nouns; positive for adj/adv),
-  "sense":               sense ID, e.g. "be_1" — must match an entry in the "senses" array
+  "type":                one of: verb | noun | adjective | adverb | pronoun | preposition | conjunction | article | numeral | interjection | other,
+  "sense":               sense ID, e.g. "run_verb_1" — must match an entry in the "senses" array
 }
 
-"senses" — one entry per unique lemma (deduplicated; if the same lemma appears in two distinct meanings, add two entries with different sense IDs):
+"senses" — one entry per unique (lemma, type) pair (deduplicated; if the same lemma appears in two distinct meanings or as different parts of speech, add two entries with different sense IDs):
 {
   "lemma":               dictionary base form,
-  "sense":               sense ID matching context entries, e.g. "be_1",
+  "type":                part of speech (same values as in context),
+  "sense":               sense ID matching context entries, e.g. "run_verb_1",
   "translation":         Russian translation of this sense of the lemma,
   "context":             short illustrative clause taken from the input (5–10 words),
   "context_translation": Russian translation of that clause
@@ -61,7 +63,7 @@ Given an English sentence or paragraph, analyse every word token and return a si
 ━━━ RULES ━━━
 1. Skip proper nouns (names, cities, ships, etc.) in all three arrays.
 2. Every sense ID referenced in "context[].sense" must have a matching entry in "senses[].sense".
-3. Sense IDs are formatted as <lemma>_<number>, starting from 1 (e.g. "go_1", "go_2").
+3. Sense IDs are formatted as <lemma>_<type>_<number>, starting from 1 (e.g. "run_verb_1", "run_noun_1", "run_verb_2").
 4. "forms" must cover the full standard paradigm even if only one form appeared in the text.
 5. Function words (articles, prepositions, conjunctions) are included in "context" and "senses" but have empty "forms" in "lemmas".
 6. Return ONLY a valid JSON object. No markdown fences, no commentary, no preamble.

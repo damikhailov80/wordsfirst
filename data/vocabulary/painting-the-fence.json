@@ -1,0 +1,1052 @@
+[
+  {
+    "surface": "My",
+    "translation": "Моя",
+    "context": "My wife, Betsy, and I were on",
+    "context_translation": "Моя жена, Бетси, и я были на",
+    "lemma": "my",
+    "type": "pronoun",
+    "sense": "my_pronoun_1",
+    "lemma_translation": "мой, моя, моё, мои"
+  },
+  {
+    "surface": "wife",
+    "translation": "жена",
+    "context": "My wife, Betsy, and I were on",
+    "context_translation": "Моя жена, Бетси, и я были на",
+    "lemma": "wife",
+    "type": "noun",
+    "sense": "wife_noun_1",
+    "lemma_translation": "жена"
+  },
+  {
+    "surface": "and",
+    "translation": "и",
+    "context": "My wife, Betsy, and I were",
+    "context_translation": "Моя жена, Бетси, и я были",
+    "lemma": "and",
+    "type": "conjunction",
+    "sense": "and_conjunction_1",
+    "lemma_translation": "и"
+  },
+  {
+    "surface": "I",
+    "translation": "я",
+    "context": "Betsy, and I were on the",
+    "context_translation": "Бетси и я были на",
+    "lemma": "I",
+    "type": "pronoun",
+    "sense": "I_pronoun_1",
+    "lemma_translation": "я"
+  },
+  {
+    "surface": "were",
+    "translation": "были",
+    "context": "and I were on the Queen Elizabeth",
+    "context_translation": "и я были на Куин Элизабет",
+    "lemma": "be",
+    "type": "verb",
+    "sense": "be_verb_1",
+    "lemma_translation": "быть, являться"
+  },
+  {
+    "surface": "on",
+    "translation": "на",
+    "context": "I were on the Queen Elizabeth",
+    "context_translation": "я были на Куин Элизабет",
+    "lemma": "on",
+    "type": "preposition",
+    "sense": "on_preposition_1",
+    "lemma_translation": "на, в (о времени)"
+  },
+  {
+    "surface": "the",
+    "translation": "(определённый артикль)",
+    "context": "were on the Queen Elizabeth, coming",
+    "context_translation": "были на Куин Элизабет, возвращаясь",
+    "lemma": "the",
+    "type": "article",
+    "sense": "the_article_1",
+    "lemma_translation": "определённый артикль"
+  },
+  {
+    "surface": "coming",
+    "translation": "возвращаясь",
+    "context": "Queen Elizabeth, coming back from our first",
+    "context_translation": "Куин Элизабет, возвращаясь из нашей первой",
+    "lemma": "come",
+    "type": "verb",
+    "sense": "come_verb_1",
+    "lemma_translation": "приходить, приезжать, возвращаться"
+  },
+  {
+    "surface": "back",
+    "translation": "обратно",
+    "context": "coming back from our first trip",
+    "context_translation": "возвращаясь из нашей первой поездки",
+    "lemma": "back",
+    "type": "adverb",
+    "sense": "back_adverb_1",
+    "lemma_translation": "обратно, назад"
+  },
+  {
+    "surface": "from",
+    "translation": "из",
+    "context": "coming back from our first trip to",
+    "context_translation": "возвращаясь из нашей первой поездки в",
+    "lemma": "from",
+    "type": "preposition",
+    "sense": "from_preposition_1",
+    "lemma_translation": "из, от"
+  },
+  {
+    "surface": "our",
+    "translation": "нашей",
+    "context": "back from our first trip to Europe",
+    "context_translation": "обратно из нашей первой поездки в Европу",
+    "lemma": "our",
+    "type": "pronoun",
+    "sense": "our_pronoun_1",
+    "lemma_translation": "наш, наша, наше, наши"
+  },
+  {
+    "surface": "first",
+    "translation": "первой",
+    "context": "from our first trip to Europe",
+    "context_translation": "из нашей первой поездки в Европу",
+    "lemma": "first",
+    "type": "adjective",
+    "sense": "first_adjective_1",
+    "lemma_translation": "первый"
+  },
+  {
+    "surface": "trip",
+    "translation": "поездки",
+    "context": "our first trip to Europe",
+    "context_translation": "нашей первой поездки в Европу",
+    "lemma": "trip",
+    "type": "noun",
+    "sense": "trip_noun_1",
+    "lemma_translation": "поездка, путешествие"
+  },
+  {
+    "surface": "to",
+    "translation": "в",
+    "context": "first trip to Europe",
+    "context_translation": "первой поездки в Европу",
+    "lemma": "to",
+    "type": "preposition",
+    "sense": "to_preposition_1",
+    "lemma_translation": "в, к, до"
+  },
+  {
+    "surface": "On",
+    "translation": "В",
+    "context": "On the first day, we played",
+    "context_translation": "В первый день мы играли",
+    "lemma": "on",
+    "type": "preposition",
+    "sense": "on_preposition_1",
+    "lemma_translation": "на, в (о времени)"
+  },
+  {
+    "surface": "the",
+    "translation": "(определённый артикль)",
+    "context": "On the first day, we played",
+    "context_translation": "В первый день мы играли",
+    "lemma": "the",
+    "type": "article",
+    "sense": "the_article_1",
+    "lemma_translation": "определённый артикль"
+  },
+  {
+    "surface": "first",
+    "translation": "первый",
+    "context": "On the first day, we played",
+    "context_translation": "В первый день мы играли",
+    "lemma": "first",
+    "type": "adjective",
+    "sense": "first_adjective_1",
+    "lemma_translation": "первый"
+  },
+  {
+    "surface": "day",
+    "translation": "день",
+    "context": "On the first day, we played",
+    "context_translation": "В первый день мы играли",
+    "lemma": "day",
+    "type": "noun",
+    "sense": "day_noun_1",
+    "lemma_translation": "день"
+  },
+  {
+    "surface": "we",
+    "translation": "мы",
+    "context": "the first day, we played our",
+    "context_translation": "первый день мы играли в нашу",
+    "lemma": "we",
+    "type": "pronoun",
+    "sense": "we_pronoun_1",
+    "lemma_translation": "мы"
+  },
+  {
+    "surface": "played",
+    "translation": "играли",
+    "context": "first day, we played our favourite game",
+    "context_translation": "первый день мы играли в нашу любимую игру",
+    "lemma": "play",
+    "type": "verb",
+    "sense": "play_verb_1",
+    "lemma_translation": "играть"
+  },
+  {
+    "surface": "our",
+    "translation": "нашу",
+    "context": "we played our favourite game, trying",
+    "context_translation": "мы играли в нашу любимую игру, пытаясь",
+    "lemma": "our",
+    "type": "pronoun",
+    "sense": "our_pronoun_1",
+    "lemma_translation": "наш, наша, наше, наши"
+  },
+  {
+    "surface": "favourite",
+    "translation": "любимую",
+    "context": "played our favourite game, trying to",
+    "context_translation": "играли в нашу любимую игру, пытаясь",
+    "lemma": "favourite",
+    "type": "adjective",
+    "sense": "favourite_adjective_1",
+    "lemma_translation": "любимый"
+  },
+  {
+    "surface": "game",
+    "translation": "игру",
+    "context": "our favourite game, trying to guess",
+    "context_translation": "нашу любимую игру, пытаясь угадать",
+    "lemma": "game",
+    "type": "noun",
+    "sense": "game_noun_1",
+    "lemma_translation": "игра"
+  },
+  {
+    "surface": "trying",
+    "translation": "пытаясь",
+    "context": "favourite game, trying to guess what",
+    "context_translation": "любимую игру, пытаясь угадать, кем",
+    "lemma": "try",
+    "type": "verb",
+    "sense": "try_verb_1",
+    "lemma_translation": "пытаться, стараться"
+  },
+  {
+    "surface": "to",
+    "translation": "(частица инфинитива)",
+    "context": "trying to guess what the different",
+    "context_translation": "пытаясь угадать, кем были разные",
+    "lemma": "to",
+    "type": "other",
+    "sense": "to_other_1",
+    "lemma_translation": "частица инфинитива"
+  },
+  {
+    "surface": "guess",
+    "translation": "угадать",
+    "context": "trying to guess what the different people",
+    "context_translation": "пытаясь угадать, кем были разные люди",
+    "lemma": "guess",
+    "type": "verb",
+    "sense": "guess_verb_1",
+    "lemma_translation": "угадывать, предполагать"
+  },
+  {
+    "surface": "what",
+    "translation": "кем",
+    "context": "to guess what the different people were",
+    "context_translation": "угадать, кем были разные люди",
+    "lemma": "what",
+    "type": "pronoun",
+    "sense": "what_pronoun_1",
+    "lemma_translation": "что, кто, какой"
+  },
+  {
+    "surface": "the",
+    "translation": "(определённый артикль)",
+    "context": "guess what the different people were",
+    "context_translation": "угадать, кем были разные люди",
+    "lemma": "the",
+    "type": "article",
+    "sense": "the_article_1",
+    "lemma_translation": "определённый артикль"
+  },
+  {
+    "surface": "different",
+    "translation": "разные",
+    "context": "what the different people were",
+    "context_translation": "кем были разные люди",
+    "lemma": "different",
+    "type": "adjective",
+    "sense": "different_adjective_1",
+    "lemma_translation": "разный, различный"
+  },
+  {
+    "surface": "people",
+    "translation": "люди",
+    "context": "the different people were",
+    "context_translation": "разные люди были",
+    "lemma": "people",
+    "type": "noun",
+    "sense": "people_noun_1",
+    "lemma_translation": "люди"
+  },
+  {
+    "surface": "were",
+    "translation": "были",
+    "context": "the different people were",
+    "context_translation": "разные люди были",
+    "lemma": "be",
+    "type": "verb",
+    "sense": "be_verb_1",
+    "lemma_translation": "быть, являться"
+  },
+  {
+    "surface": "called",
+    "translation": "обратила",
+    "context": "Betsy called my attention to one man",
+    "context_translation": "Бетси обратила моё внимание на одного мужчину",
+    "lemma": "call",
+    "type": "verb",
+    "sense": "call_verb_1",
+    "lemma_translation": "звать, называть; обращать (внимание)"
+  },
+  {
+    "surface": "my",
+    "translation": "моё",
+    "context": "called my attention to one man",
+    "context_translation": "обратила моё внимание на одного мужчину",
+    "lemma": "my",
+    "type": "pronoun",
+    "sense": "my_pronoun_1",
+    "lemma_translation": "мой, моя, моё, мои"
+  },
+  {
+    "surface": "attention",
+    "translation": "внимание",
+    "context": "called my attention to one man with",
+    "context_translation": "обратила моё внимание на одного мужчину с",
+    "lemma": "attention",
+    "type": "noun",
+    "sense": "attention_noun_1",
+    "lemma_translation": "внимание"
+  },
+  {
+    "surface": "to",
+    "translation": "на",
+    "context": "my attention to one man with grey",
+    "context_translation": "моё внимание на одного мужчину с седыми",
+    "lemma": "to",
+    "type": "preposition",
+    "sense": "to_preposition_1",
+    "lemma_translation": "в, к, до"
+  },
+  {
+    "surface": "one",
+    "translation": "одного",
+    "context": "attention to one man with grey hair",
+    "context_translation": "внимание на одного мужчину с седыми волосами",
+    "lemma": "one",
+    "type": "numeral",
+    "sense": "one_numeral_1",
+    "lemma_translation": "один"
+  },
+  {
+    "surface": "man",
+    "translation": "мужчину",
+    "context": "to one man with grey hair that",
+    "context_translation": "на одного мужчину с седыми волосами, которые",
+    "lemma": "man",
+    "type": "noun",
+    "sense": "man_noun_1",
+    "lemma_translation": "мужчина, человек"
+  },
+  {
+    "surface": "with",
+    "translation": "с",
+    "context": "one man with grey hair that stood",
+    "context_translation": "одного мужчину с седыми волосами, которые торчали",
+    "lemma": "with",
+    "type": "preposition",
+    "sense": "with_preposition_1",
+    "lemma_translation": "с, вместе с"
+  },
+  {
+    "surface": "grey",
+    "translation": "седыми",
+    "context": "man with grey hair that stood up",
+    "context_translation": "мужчину с седыми волосами, которые торчали",
+    "lemma": "grey",
+    "type": "adjective",
+    "sense": "grey_adjective_1",
+    "lemma_translation": "серый, седой"
+  },
+  {
+    "surface": "hair",
+    "translation": "волосами",
+    "context": "with grey hair that stood up on",
+    "context_translation": "с седыми волосами, которые торчали на",
+    "lemma": "hair",
+    "type": "noun",
+    "sense": "hair_noun_1",
+    "lemma_translation": "волосы"
+  },
+  {
+    "surface": "that",
+    "translation": "которые",
+    "context": "grey hair that stood up on his",
+    "context_translation": "седыми волосами, которые торчали на его",
+    "lemma": "that",
+    "type": "pronoun",
+    "sense": "that_pronoun_1",
+    "lemma_translation": "который, тот"
+  },
+  {
+    "surface": "stood",
+    "translation": "торчали",
+    "context": "hair that stood up on his head",
+    "context_translation": "волосами, которые торчали на его голове",
+    "lemma": "stand",
+    "type": "verb",
+    "sense": "stand_verb_1",
+    "lemma_translation": "стоять, торчать"
+  },
+  {
+    "surface": "up",
+    "translation": "вверх",
+    "context": "that stood up on his head",
+    "context_translation": "которые торчали вверх на его голове",
+    "lemma": "up",
+    "type": "adverb",
+    "sense": "up_adverb_1",
+    "lemma_translation": "вверх, наверх"
+  },
+  {
+    "surface": "on",
+    "translation": "на",
+    "context": "stood up on his head, and with",
+    "context_translation": "торчали вверх на его голове, и с",
+    "lemma": "on",
+    "type": "preposition",
+    "sense": "on_preposition_1",
+    "lemma_translation": "на, в (о времени)"
+  },
+  {
+    "surface": "his",
+    "translation": "его",
+    "context": "stood up on his head, and with",
+    "context_translation": "торчали вверх на его голове, и с",
+    "lemma": "his",
+    "type": "pronoun",
+    "sense": "his_pronoun_1",
+    "lemma_translation": "его"
+  },
+  {
+    "surface": "head",
+    "translation": "голове",
+    "context": "up on his head, and with deep",
+    "context_translation": "вверх на его голове, и с глубокими",
+    "lemma": "head",
+    "type": "noun",
+    "sense": "head_noun_1",
+    "lemma_translation": "голова"
+  },
+  {
+    "surface": "and",
+    "translation": "и",
+    "context": "on his head, and with deep dark",
+    "context_translation": "на его голове, и с глубокими тёмно-синими",
+    "lemma": "and",
+    "type": "conjunction",
+    "sense": "and_conjunction_1",
+    "lemma_translation": "и"
+  },
+  {
+    "surface": "with",
+    "translation": "с",
+    "context": "head, and with deep dark blue eyes",
+    "context_translation": "голове, и с глубокими тёмно-синими глазами",
+    "lemma": "with",
+    "type": "preposition",
+    "sense": "with_preposition_1",
+    "lemma_translation": "с, вместе с"
+  },
+  {
+    "surface": "deep",
+    "translation": "глубокими",
+    "context": "and with deep dark blue eyes",
+    "context_translation": "и с глубокими тёмно-синими глазами",
+    "lemma": "deep",
+    "type": "adjective",
+    "sense": "deep_adjective_1",
+    "lemma_translation": "глубокий"
+  },
+  {
+    "surface": "dark",
+    "translation": "тёмно-",
+    "context": "with deep dark blue eyes",
+    "context_translation": "с глубокими тёмно-синими глазами",
+    "lemma": "dark",
+    "type": "adjective",
+    "sense": "dark_adjective_1",
+    "lemma_translation": "тёмный"
+  },
+  {
+    "surface": "blue",
+    "translation": "синими",
+    "context": "deep dark blue eyes",
+    "context_translation": "глубокими тёмно-синими глазами",
+    "lemma": "blue",
+    "type": "adjective",
+    "sense": "blue_adjective_1",
+    "lemma_translation": "синий, голубой"
+  },
+  {
+    "surface": "eyes",
+    "translation": "глазами",
+    "context": "deep dark blue eyes",
+    "context_translation": "глубокими тёмно-синими глазами",
+    "lemma": "eye",
+    "type": "noun",
+    "sense": "eye_noun_1",
+    "lemma_translation": "глаз"
+  },
+  {
+    "surface": "He",
+    "translation": "Он",
+    "context": "He was dressed in an old sweater",
+    "context_translation": "Он был одет в старый свитер",
+    "lemma": "he",
+    "type": "pronoun",
+    "sense": "he_pronoun_1",
+    "lemma_translation": "он"
+  },
+  {
+    "surface": "was",
+    "translation": "был",
+    "context": "He was dressed in an old sweater",
+    "context_translation": "Он был одет в старый свитер",
+    "lemma": "be",
+    "type": "verb",
+    "sense": "be_verb_1",
+    "lemma_translation": "быть, являться"
+  },
+  {
+    "surface": "dressed",
+    "translation": "одет",
+    "context": "He was dressed in an old sweater",
+    "context_translation": "Он был одет в старый свитер",
+    "lemma": "dress",
+    "type": "verb",
+    "sense": "dress_verb_1",
+    "lemma_translation": "одевать(ся), быть одетым"
+  },
+  {
+    "surface": "in",
+    "translation": "в",
+    "context": "was dressed in an old sweater and",
+    "context_translation": "был одет в старый свитер и",
+    "lemma": "in",
+    "type": "preposition",
+    "sense": "in_preposition_1",
+    "lemma_translation": "в"
+  },
+  {
+    "surface": "an",
+    "translation": "(неопределённый артикль)",
+    "context": "dressed in an old sweater and trousers",
+    "context_translation": "одет в старый свитер и брюки",
+    "lemma": "a",
+    "type": "article",
+    "sense": "a_article_1",
+    "lemma_translation": "неопределённый артикль"
+  },
+  {
+    "surface": "old",
+    "translation": "старый",
+    "context": "in an old sweater and trousers",
+    "context_translation": "в старый свитер и брюки",
+    "lemma": "old",
+    "type": "adjective",
+    "sense": "old_adjective_1",
+    "lemma_translation": "старый"
+  },
+  {
+    "surface": "sweater",
+    "translation": "свитер",
+    "context": "an old sweater and trousers, and had",
+    "context_translation": "старый свитер и брюки, и на нём были",
+    "lemma": "sweater",
+    "type": "noun",
+    "sense": "sweater_noun_1",
+    "lemma_translation": "свитер"
+  },
+  {
+    "surface": "and",
+    "translation": "и",
+    "context": "old sweater and trousers, and had summer",
+    "context_translation": "старый свитер и брюки, и на нём были летние",
+    "lemma": "and",
+    "type": "conjunction",
+    "sense": "and_conjunction_1",
+    "lemma_translation": "и"
+  },
+  {
+    "surface": "trousers",
+    "translation": "брюки",
+    "context": "sweater and trousers, and had summer shoes",
+    "context_translation": "свитер и брюки, и на нём были летние туфли",
+    "lemma": "trousers",
+    "type": "noun",
+    "sense": "trousers_noun_1",
+    "lemma_translation": "брюки"
+  },
+  {
+    "surface": "and",
+    "translation": "и",
+    "context": "and trousers, and had summer shoes on",
+    "context_translation": "и брюки, и на нём были летние туфли",
+    "lemma": "and",
+    "type": "conjunction",
+    "sense": "and_conjunction_1",
+    "lemma_translation": "и"
+  },
+  {
+    "surface": "had",
+    "translation": "были",
+    "context": "trousers, and had summer shoes on his",
+    "context_translation": "брюки, и на нём были летние туфли на",
+    "lemma": "have",
+    "type": "verb",
+    "sense": "have_verb_1",
+    "lemma_translation": "вспомогательный глагол (для образования перфекта)"
+  },
+  {
+    "surface": "summer",
+    "translation": "летние",
+    "context": "and had summer shoes on his feet",
+    "context_translation": "и на нём были летние туфли на ногах",
+    "lemma": "summer",
+    "type": "noun",
+    "sense": "summer_noun_1",
+    "lemma_translation": "лето; летний"
+  },
+  {
+    "surface": "shoes",
+    "translation": "туфли",
+    "context": "had summer shoes on his feet",
+    "context_translation": "на нём были летние туфли на ногах",
+    "lemma": "shoe",
+    "type": "noun",
+    "sense": "shoe_noun_1",
+    "lemma_translation": "туфля, ботинок"
+  },
+  {
+    "surface": "on",
+    "translation": "на",
+    "context": "summer shoes on his feet",
+    "context_translation": "летние туфли на ногах",
+    "lemma": "on",
+    "type": "preposition",
+    "sense": "on_preposition_1",
+    "lemma_translation": "на, в (о времени)"
+  },
+  {
+    "surface": "his",
+    "translation": "его",
+    "context": "shoes on his feet",
+    "context_translation": "туфли на его ногах",
+    "lemma": "his",
+    "type": "pronoun",
+    "sense": "his_pronoun_1",
+    "lemma_translation": "его"
+  },
+  {
+    "surface": "feet",
+    "translation": "ногах",
+    "context": "shoes on his feet",
+    "context_translation": "туфли на его ногах",
+    "lemma": "foot",
+    "type": "noun",
+    "sense": "foot_noun_1",
+    "lemma_translation": "нога (ступня)"
+  },
+  {
+    "surface": "I",
+    "translation": "Я",
+    "context": "I immediately guessed that he was an",
+    "context_translation": "Я сразу предположил, что он был",
+    "lemma": "I",
+    "type": "pronoun",
+    "sense": "I_pronoun_1",
+    "lemma_translation": "я"
+  },
+  {
+    "surface": "immediately",
+    "translation": "сразу",
+    "context": "I immediately guessed that he was an",
+    "context_translation": "Я сразу предположил, что он был",
+    "lemma": "immediately",
+    "type": "adverb",
+    "sense": "immediately_adverb_1",
+    "lemma_translation": "немедленно, сразу"
+  },
+  {
+    "surface": "guessed",
+    "translation": "предположил",
+    "context": "I immediately guessed that he was an artist",
+    "context_translation": "Я сразу предположил, что он был художником",
+    "lemma": "guess",
+    "type": "verb",
+    "sense": "guess_verb_1",
+    "lemma_translation": "угадывать, предполагать"
+  },
+  {
+    "surface": "that",
+    "translation": "что",
+    "context": "guessed that he was an artist",
+    "context_translation": "предположил, что он был художником",
+    "lemma": "that",
+    "type": "conjunction",
+    "sense": "that_conjunction_1",
+    "lemma_translation": "что (союз)"
+  },
+  {
+    "surface": "he",
+    "translation": "он",
+    "context": "guessed that he was an artist",
+    "context_translation": "предположил, что он был художником",
+    "lemma": "he",
+    "type": "pronoun",
+    "sense": "he_pronoun_1",
+    "lemma_translation": "он"
+  },
+  {
+    "surface": "was",
+    "translation": "был",
+    "context": "that he was an artist, a French",
+    "context_translation": "что он был художником, французским",
+    "lemma": "be",
+    "type": "verb",
+    "sense": "be_verb_1",
+    "lemma_translation": "быть, являться"
+  },
+  {
+    "surface": "an",
+    "translation": "(неопределённый артикль)",
+    "context": "he was an artist, a French artist",
+    "context_translation": "он был художником, французским художником",
+    "lemma": "a",
+    "type": "article",
+    "sense": "a_article_1",
+    "lemma_translation": "неопределённый артикль"
+  },
+  {
+    "surface": "artist",
+    "translation": "художником",
+    "context": "was an artist, a French artist",
+    "context_translation": "был художником, французским художником",
+    "lemma": "artist",
+    "type": "noun",
+    "sense": "artist_noun_1",
+    "lemma_translation": "художник, артист"
+  },
+  {
+    "surface": "a",
+    "translation": "(неопределённый артикль)",
+    "context": "an artist, a French artist",
+    "context_translation": "художником, французским художником",
+    "lemma": "a",
+    "type": "article",
+    "sense": "a_article_1",
+    "lemma_translation": "неопределённый артикль"
+  },
+  {
+    "surface": "artist",
+    "translation": "художником",
+    "context": "artist, a French artist",
+    "context_translation": "художником, французским художником",
+    "lemma": "artist",
+    "type": "noun",
+    "sense": "artist_noun_1",
+    "lemma_translation": "художник, артист"
+  },
+  {
+    "surface": "laughed",
+    "translation": "засмеялась",
+    "context": "Betsy laughed at me, because we had",
+    "context_translation": "Бетси засмеялась надо мной, потому что мы",
+    "lemma": "laugh",
+    "type": "verb",
+    "sense": "laugh_verb_1",
+    "lemma_translation": "смеяться"
+  },
+  {
+    "surface": "at",
+    "translation": "над",
+    "context": "laughed at me, because we had agreed",
+    "context_translation": "засмеялась надо мной, потому что мы договорились",
+    "lemma": "at",
+    "type": "preposition",
+    "sense": "at_preposition_1",
+    "lemma_translation": "в, на, у; над (смеяться над)"
+  },
+  {
+    "surface": "me",
+    "translation": "мной",
+    "context": "laughed at me, because we had agreed",
+    "context_translation": "засмеялась надо мной, потому что мы договорились",
+    "lemma": "I",
+    "type": "pronoun",
+    "sense": "I_pronoun_1",
+    "lemma_translation": "я"
+  },
+  {
+    "surface": "because",
+    "translation": "потому что",
+    "context": "at me, because we had agreed that",
+    "context_translation": "надо мной, потому что мы договорились, что",
+    "lemma": "because",
+    "type": "conjunction",
+    "sense": "because_conjunction_1",
+    "lemma_translation": "потому что"
+  },
+  {
+    "surface": "we",
+    "translation": "мы",
+    "context": "because we had agreed that people seldom",
+    "context_translation": "потому что мы договорились, что люди редко",
+    "lemma": "we",
+    "type": "pronoun",
+    "sense": "we_pronoun_1",
+    "lemma_translation": "мы"
+  },
+  {
+    "surface": "had",
+    "translation": "(вспомогательный глагол)",
+    "context": "because we had agreed that people seldom",
+    "context_translation": "потому что мы договорились, что люди редко",
+    "lemma": "have",
+    "type": "verb",
+    "sense": "have_verb_2",
+    "lemma_translation": "вспомогательный глагол (для образования перфекта)"
+  },
+  {
+    "surface": "agreed",
+    "translation": "договорились",
+    "context": "we had agreed that people seldom or",
+    "context_translation": "мы договорились, что люди редко или",
+    "lemma": "agree",
+    "type": "verb",
+    "sense": "agree_verb_1",
+    "lemma_translation": "соглашаться, договариваться"
+  },
+  {
+    "surface": "that",
+    "translation": "что",
+    "context": "had agreed that people seldom or never",
+    "context_translation": "договорились, что люди редко или никогда",
+    "lemma": "that",
+    "type": "conjunction",
+    "sense": "that_conjunction_1",
+    "lemma_translation": "что (союз)"
+  },
+  {
+    "surface": "people",
+    "translation": "люди",
+    "context": "agreed that people seldom or never look",
+    "context_translation": "договорились, что люди редко или никогда не выглядят",
+    "lemma": "people",
+    "type": "noun",
+    "sense": "people_noun_1",
+    "lemma_translation": "люди"
+  },
+  {
+    "surface": "seldom",
+    "translation": "редко",
+    "context": "that people seldom or never look like",
+    "context_translation": "что люди редко или никогда не выглядят как",
+    "lemma": "seldom",
+    "type": "adverb",
+    "sense": "seldom_adverb_1",
+    "lemma_translation": "редко"
+  },
+  {
+    "surface": "or",
+    "translation": "или",
+    "context": "people seldom or never look like what",
+    "context_translation": "люди редко или никогда не выглядят как то, кем",
+    "lemma": "or",
+    "type": "conjunction",
+    "sense": "or_conjunction_1",
+    "lemma_translation": "или"
+  },
+  {
+    "surface": "never",
+    "translation": "никогда",
+    "context": "seldom or never look like what they",
+    "context_translation": "редко или никогда не выглядят как то, кем они",
+    "lemma": "never",
+    "type": "adverb",
+    "sense": "never_adverb_1",
+    "lemma_translation": "никогда"
+  },
+  {
+    "surface": "look",
+    "translation": "выглядят",
+    "context": "or never look like what they really",
+    "context_translation": "или никогда не выглядят как то, кем они на самом деле",
+    "lemma": "look",
+    "type": "verb",
+    "sense": "look_verb_1",
+    "lemma_translation": "смотреть, выглядеть"
+  },
+  {
+    "surface": "like",
+    "translation": "как",
+    "context": "never look like what they really are",
+    "context_translation": "никогда не выглядят как то, кем они на самом деле являются",
+    "lemma": "like",
+    "type": "preposition",
+    "sense": "like_preposition_1",
+    "lemma_translation": "как, подобно"
+  },
+  {
+    "surface": "what",
+    "translation": "то, кем",
+    "context": "look like what they really are",
+    "context_translation": "выглядят как то, кем они на самом деле являются",
+    "lemma": "what",
+    "type": "pronoun",
+    "sense": "what_pronoun_1",
+    "lemma_translation": "что, кто, какой"
+  },
+  {
+    "surface": "they",
+    "translation": "они",
+    "context": "like what they really are",
+    "context_translation": "как то, кем они на самом деле являются",
+    "lemma": "they",
+    "type": "pronoun",
+    "sense": "they_pronoun_1",
+    "lemma_translation": "они"
+  },
+  {
+    "surface": "really",
+    "translation": "на самом деле",
+    "context": "what they really are",
+    "context_translation": "кем они на самом деле являются",
+    "lemma": "really",
+    "type": "adverb",
+    "sense": "really_adverb_1",
+    "lemma_translation": "действительно, на самом деле"
+  },
+  {
+    "surface": "are",
+    "translation": "являются",
+    "context": "what they really are",
+    "context_translation": "кем они на самом деле являются",
+    "lemma": "be",
+    "type": "verb",
+    "sense": "be_verb_1",
+    "lemma_translation": "быть, являться"
+  },
+  {
+    "surface": "She",
+    "translation": "Она",
+    "context": "She said he was probably a member",
+    "context_translation": "Она сказала, что он, вероятно, был членом",
+    "lemma": "she",
+    "type": "pronoun",
+    "sense": "she_pronoun_1",
+    "lemma_translation": "она"
+  },
+  {
+    "surface": "said",
+    "translation": "сказала",
+    "context": "She said he was probably a member",
+    "context_translation": "Она сказала, что он, вероятно, был членом",
+    "lemma": "say",
+    "type": "verb",
+    "sense": "say_verb_1",
+    "lemma_translation": "говорить, сказать"
+  },
+  {
+    "surface": "he",
+    "translation": "он",
+    "context": "said he was probably a member of",
+    "context_translation": "сказала, что он, вероятно, был членом",
+    "lemma": "he",
+    "type": "pronoun",
+    "sense": "he_pronoun_1",
+    "lemma_translation": "он"
+  },
+  {
+    "surface": "was",
+    "translation": "был",
+    "context": "he was probably a member of the",
+    "context_translation": "он, вероятно, был членом",
+    "lemma": "be",
+    "type": "verb",
+    "sense": "be_verb_1",
+    "lemma_translation": "быть, являться"
+  },
+  {
+    "surface": "probably",
+    "translation": "вероятно",
+    "context": "was probably a member of the British",
+    "context_translation": "вероятно, был членом Британского",
+    "lemma": "probably",
+    "type": "adverb",
+    "sense": "probably_adverb_1",
+    "lemma_translation": "вероятно, наверное"
+  },
+  {
+    "surface": "a",
+    "translation": "(неопределённый артикль)",
+    "context": "probably a member of the British Parliament",
+    "context_translation": "вероятно, членом Британского парламента",
+    "lemma": "a",
+    "type": "article",
+    "sense": "a_article_1",
+    "lemma_translation": "неопределённый артикль"
+  },
+  {
+    "surface": "member",
+    "translation": "членом",
+    "context": "probably a member of the British Parliament",
+    "context_translation": "вероятно, членом Британского парламента",
+    "lemma": "member",
+    "type": "noun",
+    "sense": "member_noun_1",
+    "lemma_translation": "член, участник"
+  },
+  {
+    "surface": "of",
+    "translation": "(родительный падеж)",
+    "context": "a member of the British Parliament",
+    "context_translation": "членом Британского парламента",
+    "lemma": "of",
+    "type": "preposition",
+    "sense": "of_preposition_1",
+    "lemma_translation": "родительный падеж; принадлежность"
+  },
+  {
+    "surface": "the",
+    "translation": "(определённый артикль)",
+    "context": "member of the British Parliament",
+    "context_translation": "членом Британского парламента",
+    "lemma": "the",
+    "type": "article",
+    "sense": "the_article_1",
+    "lemma_translation": "определённый артикль"
+  }
+]

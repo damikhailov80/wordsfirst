@@ -1,15 +1,27 @@
 import fs from "fs/promises";
 import path from "path";
 import type { StoryRepository } from "./repository";
-import type { StoryDetail, StorySummary } from "./types";
+import type { StoryDetail, StorySummary, VocabularyEntry } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data", "stories");
+const VOCAB_DIR = path.join(process.cwd(), "data", "vocabulary");
+
+async function readVocabularyFile(id: string): Promise<VocabularyEntry[] | undefined> {
+  try {
+    const raw = await fs.readFile(path.join(VOCAB_DIR, `${id}.json`), "utf-8");
+    return JSON.parse(raw) as VocabularyEntry[];
+  } catch {
+    return undefined;
+  }
+}
 
 async function readStoryFile(id: string): Promise<StoryDetail | null> {
   if (!/^[a-z0-9-]+$/.test(id)) return null;
   try {
     const raw = await fs.readFile(path.join(DATA_DIR, `${id}.json`), "utf-8");
-    return JSON.parse(raw) as StoryDetail;
+    const story = JSON.parse(raw) as StoryDetail;
+    const vocabulary = await readVocabularyFile(id);
+    return vocabulary ? { ...story, vocabulary } : story;
   } catch {
     return null;
   }
