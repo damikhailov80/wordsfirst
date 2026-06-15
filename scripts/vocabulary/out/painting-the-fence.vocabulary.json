@@ -1,0 +1,2192 @@
+{
+  "context": [
+    {
+      "surface": "My",
+      "translation": "Моя",
+      "context": "My wife, Betsy, and I were on",
+      "context_translation": "Моя жена, Бетси, и я были на",
+      "lemma": "my",
+      "sense": "my_1"
+    },
+    {
+      "surface": "wife",
+      "translation": "жена",
+      "context": "My wife, Betsy, and I were on",
+      "context_translation": "Моя жена, Бетси, и я были на",
+      "lemma": "wife",
+      "sense": "wife_1"
+    },
+    {
+      "surface": "and",
+      "translation": "и",
+      "context": "My wife, Betsy, and I were on",
+      "context_translation": "Моя жена, Бетси, и я были на",
+      "lemma": "and",
+      "sense": "and_1"
+    },
+    {
+      "surface": "I",
+      "translation": "я",
+      "context": "and I were on the Queen Elizabeth",
+      "context_translation": "и я были на Куин Элизабет",
+      "lemma": "I",
+      "sense": "I_1"
+    },
+    {
+      "surface": "were",
+      "translation": "были",
+      "context": "and I were on the Queen Elizabeth",
+      "context_translation": "и я были на Куин Элизабет",
+      "lemma": "be",
+      "sense": "be_1"
+    },
+    {
+      "surface": "on",
+      "translation": "на",
+      "context": "I were on the Queen Elizabeth",
+      "context_translation": "я были на Куин Элизабет",
+      "lemma": "on",
+      "sense": "on_1"
+    },
+    {
+      "surface": "the",
+      "translation": "—",
+      "context": "were on the Queen Elizabeth, coming back",
+      "context_translation": "были на Куин Элизабет, возвращаясь",
+      "lemma": "the",
+      "sense": "the_1"
+    },
+    {
+      "surface": "coming",
+      "translation": "возвращаясь",
+      "context": "Queen Elizabeth, coming back from our first",
+      "context_translation": "Куин Элизабет, возвращаясь из нашей первой",
+      "lemma": "come",
+      "sense": "come_1"
+    },
+    {
+      "surface": "back",
+      "translation": "обратно",
+      "context": "coming back from our first trip",
+      "context_translation": "возвращаясь из нашей первой поездки",
+      "lemma": "back",
+      "sense": "back_1"
+    },
+    {
+      "surface": "from",
+      "translation": "из",
+      "context": "coming back from our first trip to",
+      "context_translation": "возвращаясь из нашей первой поездки в",
+      "lemma": "from",
+      "sense": "from_1"
+    },
+    {
+      "surface": "our",
+      "translation": "нашей",
+      "context": "back from our first trip to Europe",
+      "context_translation": "обратно из нашей первой поездки в Европу",
+      "lemma": "our",
+      "sense": "our_1"
+    },
+    {
+      "surface": "first",
+      "translation": "первой",
+      "context": "from our first trip to Europe",
+      "context_translation": "из нашей первой поездки в Европу",
+      "lemma": "first",
+      "sense": "first_1"
+    },
+    {
+      "surface": "trip",
+      "translation": "поездки",
+      "context": "our first trip to Europe",
+      "context_translation": "нашей первой поездки в Европу",
+      "lemma": "trip",
+      "sense": "trip_1"
+    },
+    {
+      "surface": "to",
+      "translation": "в",
+      "context": "first trip to Europe",
+      "context_translation": "первой поездки в Европу",
+      "lemma": "to",
+      "sense": "to_1"
+    },
+    {
+      "surface": "On",
+      "translation": "В",
+      "context": "On the first day, we played",
+      "context_translation": "В первый день мы играли",
+      "lemma": "on",
+      "sense": "on_2"
+    },
+    {
+      "surface": "the",
+      "translation": "—",
+      "context": "On the first day, we played",
+      "context_translation": "В первый день мы играли",
+      "lemma": "the",
+      "sense": "the_1"
+    },
+    {
+      "surface": "first",
+      "translation": "первый",
+      "context": "On the first day, we played",
+      "context_translation": "В первый день мы играли",
+      "lemma": "first",
+      "sense": "first_1"
+    },
+    {
+      "surface": "day",
+      "translation": "день",
+      "context": "On the first day, we played our",
+      "context_translation": "В первый день мы играли в нашу",
+      "lemma": "day",
+      "sense": "day_1"
+    },
+    {
+      "surface": "we",
+      "translation": "мы",
+      "context": "the first day, we played our favourite",
+      "context_translation": "первый день мы играли в нашу любимую",
+      "lemma": "we",
+      "sense": "we_1"
+    },
+    {
+      "surface": "played",
+      "translation": "играли",
+      "context": "first day, we played our favourite game",
+      "context_translation": "первый день мы играли в нашу любимую игру",
+      "lemma": "play",
+      "sense": "play_1"
+    },
+    {
+      "surface": "our",
+      "translation": "нашу",
+      "context": "we played our favourite game, trying",
+      "context_translation": "мы играли в нашу любимую игру, пытаясь",
+      "lemma": "our",
+      "sense": "our_1"
+    },
+    {
+      "surface": "favourite",
+      "translation": "любимую",
+      "context": "played our favourite game, trying to guess",
+      "context_translation": "играли в нашу любимую игру, пытаясь угадать",
+      "lemma": "favourite",
+      "sense": "favourite_1"
+    },
+    {
+      "surface": "game",
+      "translation": "игру",
+      "context": "our favourite game, trying to guess",
+      "context_translation": "нашу любимую игру, пытаясь угадать",
+      "lemma": "game",
+      "sense": "game_1"
+    },
+    {
+      "surface": "trying",
+      "translation": "пытаясь",
+      "context": "favourite game, trying to guess what",
+      "context_translation": "любимую игру, пытаясь угадать, кем",
+      "lemma": "try",
+      "sense": "try_1"
+    },
+    {
+      "surface": "to",
+      "translation": "—",
+      "context": "trying to guess what the different people",
+      "context_translation": "пытаясь угадать, кем были разные люди",
+      "lemma": "to",
+      "sense": "to_2"
+    },
+    {
+      "surface": "guess",
+      "translation": "угадать",
+      "context": "trying to guess what the different people",
+      "context_translation": "пытаясь угадать, кем были разные люди",
+      "lemma": "guess",
+      "sense": "guess_1"
+    },
+    {
+      "surface": "what",
+      "translation": "кем",
+      "context": "to guess what the different people were",
+      "context_translation": "угадать, кем были разные люди",
+      "lemma": "what",
+      "sense": "what_1"
+    },
+    {
+      "surface": "the",
+      "translation": "—",
+      "context": "guess what the different people were",
+      "context_translation": "угадать, кем были разные люди",
+      "lemma": "the",
+      "sense": "the_1"
+    },
+    {
+      "surface": "different",
+      "translation": "разные",
+      "context": "what the different people were",
+      "context_translation": "кем были разные люди",
+      "lemma": "different",
+      "sense": "different_1"
+    },
+    {
+      "surface": "people",
+      "translation": "люди",
+      "context": "the different people were",
+      "context_translation": "разные люди были",
+      "lemma": "people",
+      "sense": "people_1"
+    },
+    {
+      "surface": "were",
+      "translation": "были",
+      "context": "what the different people were",
+      "context_translation": "кем были разные люди",
+      "lemma": "be",
+      "sense": "be_2"
+    },
+    {
+      "surface": "called",
+      "translation": "обратила",
+      "context": "Betsy called my attention to one man",
+      "context_translation": "Бетси обратила моё внимание на одного мужчину",
+      "lemma": "call",
+      "sense": "call_1"
+    },
+    {
+      "surface": "my",
+      "translation": "моё",
+      "context": "called my attention to one man",
+      "context_translation": "обратила моё внимание на одного мужчину",
+      "lemma": "my",
+      "sense": "my_1"
+    },
+    {
+      "surface": "attention",
+      "translation": "внимание",
+      "context": "called my attention to one man with",
+      "context_translation": "обратила моё внимание на одного мужчину с",
+      "lemma": "attention",
+      "sense": "attention_1"
+    },
+    {
+      "surface": "to",
+      "translation": "на",
+      "context": "my attention to one man with grey",
+      "context_translation": "моё внимание на одного мужчину с седыми",
+      "lemma": "to",
+      "sense": "to_3"
+    },
+    {
+      "surface": "one",
+      "translation": "одного",
+      "context": "attention to one man with grey hair",
+      "context_translation": "внимание на одного мужчину с седыми волосами",
+      "lemma": "one",
+      "sense": "one_1"
+    },
+    {
+      "surface": "man",
+      "translation": "мужчину",
+      "context": "to one man with grey hair",
+      "context_translation": "на одного мужчину с седыми волосами",
+      "lemma": "man",
+      "sense": "man_1"
+    },
+    {
+      "surface": "with",
+      "translation": "с",
+      "context": "one man with grey hair that stood",
+      "context_translation": "одного мужчину с седыми волосами, которые торчали",
+      "lemma": "with",
+      "sense": "with_1"
+    },
+    {
+      "surface": "grey",
+      "translation": "седыми",
+      "context": "man with grey hair that stood up",
+      "context_translation": "мужчину с седыми волосами, которые торчали",
+      "lemma": "grey",
+      "sense": "grey_1"
+    },
+    {
+      "surface": "hair",
+      "translation": "волосами",
+      "context": "with grey hair that stood up on",
+      "context_translation": "с седыми волосами, которые торчали на",
+      "lemma": "hair",
+      "sense": "hair_1"
+    },
+    {
+      "surface": "that",
+      "translation": "которые",
+      "context": "grey hair that stood up on his",
+      "context_translation": "седыми волосами, которые торчали на его",
+      "lemma": "that",
+      "sense": "that_1"
+    },
+    {
+      "surface": "stood",
+      "translation": "торчали",
+      "context": "hair that stood up on his head",
+      "context_translation": "волосами, которые торчали на его голове",
+      "lemma": "stand",
+      "sense": "stand_1"
+    },
+    {
+      "surface": "up",
+      "translation": "вверх",
+      "context": "that stood up on his head",
+      "context_translation": "которые торчали на его голове",
+      "lemma": "up",
+      "sense": "up_1"
+    },
+    {
+      "surface": "on",
+      "translation": "на",
+      "context": "stood up on his head, and with",
+      "context_translation": "торчали на его голове, и с",
+      "lemma": "on",
+      "sense": "on_1"
+    },
+    {
+      "surface": "his",
+      "translation": "его",
+      "context": "stood up on his head, and with",
+      "context_translation": "торчали на его голове, и с",
+      "lemma": "his",
+      "sense": "his_1"
+    },
+    {
+      "surface": "head",
+      "translation": "голове",
+      "context": "up on his head, and with deep",
+      "context_translation": "на его голове, и с глубокими",
+      "lemma": "head",
+      "sense": "head_1"
+    },
+    {
+      "surface": "and",
+      "translation": "и",
+      "context": "on his head, and with deep dark",
+      "context_translation": "на его голове, и с глубокими тёмными",
+      "lemma": "and",
+      "sense": "and_1"
+    },
+    {
+      "surface": "with",
+      "translation": "с",
+      "context": "head, and with deep dark blue eyes",
+      "context_translation": "голове, и с глубокими тёмно-синими глазами",
+      "lemma": "with",
+      "sense": "with_1"
+    },
+    {
+      "surface": "deep",
+      "translation": "глубокими",
+      "context": "and with deep dark blue eyes",
+      "context_translation": "и с глубокими тёмно-синими глазами",
+      "lemma": "deep",
+      "sense": "deep_1"
+    },
+    {
+      "surface": "dark",
+      "translation": "тёмно-",
+      "context": "with deep dark blue eyes",
+      "context_translation": "с глубокими тёмно-синими глазами",
+      "lemma": "dark",
+      "sense": "dark_1"
+    },
+    {
+      "surface": "blue",
+      "translation": "синими",
+      "context": "deep dark blue eyes",
+      "context_translation": "глубокими тёмно-синими глазами",
+      "lemma": "blue",
+      "sense": "blue_1"
+    },
+    {
+      "surface": "eyes",
+      "translation": "глазами",
+      "context": "with deep dark blue eyes",
+      "context_translation": "с глубокими тёмно-синими глазами",
+      "lemma": "eye",
+      "sense": "eye_1"
+    },
+    {
+      "surface": "He",
+      "translation": "Он",
+      "context": "He was dressed in an old sweater",
+      "context_translation": "Он был одет в старый свитер",
+      "lemma": "he",
+      "sense": "he_1"
+    },
+    {
+      "surface": "was",
+      "translation": "был",
+      "context": "He was dressed in an old sweater",
+      "context_translation": "Он был одет в старый свитер",
+      "lemma": "be",
+      "sense": "be_1"
+    },
+    {
+      "surface": "dressed",
+      "translation": "одет",
+      "context": "He was dressed in an old sweater",
+      "context_translation": "Он был одет в старый свитер",
+      "lemma": "dress",
+      "sense": "dress_1"
+    },
+    {
+      "surface": "in",
+      "translation": "в",
+      "context": "was dressed in an old sweater and",
+      "context_translation": "был одет в старый свитер и",
+      "lemma": "in",
+      "sense": "in_1"
+    },
+    {
+      "surface": "an",
+      "translation": "—",
+      "context": "dressed in an old sweater and trousers",
+      "context_translation": "одет в старый свитер и брюки",
+      "lemma": "a",
+      "sense": "a_1"
+    },
+    {
+      "surface": "old",
+      "translation": "старый",
+      "context": "in an old sweater and trousers",
+      "context_translation": "в старый свитер и брюки",
+      "lemma": "old",
+      "sense": "old_1"
+    },
+    {
+      "surface": "sweater",
+      "translation": "свитер",
+      "context": "an old sweater and trousers, and had",
+      "context_translation": "старый свитер и брюки, и на нём были",
+      "lemma": "sweater",
+      "sense": "sweater_1"
+    },
+    {
+      "surface": "and",
+      "translation": "и",
+      "context": "old sweater and trousers, and had summer",
+      "context_translation": "старый свитер и брюки, и на нём были летние",
+      "lemma": "and",
+      "sense": "and_1"
+    },
+    {
+      "surface": "trousers",
+      "translation": "брюки",
+      "context": "sweater and trousers, and had summer shoes",
+      "context_translation": "свитер и брюки, и на нём были летние туфли",
+      "lemma": "trousers",
+      "sense": "trousers_1"
+    },
+    {
+      "surface": "and",
+      "translation": "и",
+      "context": "and trousers, and had summer shoes on",
+      "context_translation": "и брюки, и на нём были летние туфли",
+      "lemma": "and",
+      "sense": "and_1"
+    },
+    {
+      "surface": "had",
+      "translation": "были",
+      "context": "trousers, and had summer shoes on his",
+      "context_translation": "брюки, и на нём были летние туфли",
+      "lemma": "have",
+      "sense": "have_1"
+    },
+    {
+      "surface": "summer",
+      "translation": "летние",
+      "context": "and had summer shoes on his feet",
+      "context_translation": "и на нём были летние туфли",
+      "lemma": "summer",
+      "sense": "summer_1"
+    },
+    {
+      "surface": "shoes",
+      "translation": "туфли",
+      "context": "had summer shoes on his feet",
+      "context_translation": "на нём были летние туфли",
+      "lemma": "shoe",
+      "sense": "shoe_1"
+    },
+    {
+      "surface": "on",
+      "translation": "на",
+      "context": "summer shoes on his feet",
+      "context_translation": "летние туфли на ногах",
+      "lemma": "on",
+      "sense": "on_1"
+    },
+    {
+      "surface": "his",
+      "translation": "его",
+      "context": "shoes on his feet",
+      "context_translation": "туфли на его ногах",
+      "lemma": "his",
+      "sense": "his_1"
+    },
+    {
+      "surface": "feet",
+      "translation": "ногах",
+      "context": "shoes on his feet",
+      "context_translation": "туфли на его ногах",
+      "lemma": "foot",
+      "sense": "foot_1"
+    },
+    {
+      "surface": "I",
+      "translation": "Я",
+      "context": "I immediately guessed that he was",
+      "context_translation": "Я сразу догадался, что он был",
+      "lemma": "I",
+      "sense": "I_1"
+    },
+    {
+      "surface": "immediately",
+      "translation": "сразу",
+      "context": "I immediately guessed that he was an",
+      "context_translation": "Я сразу догадался, что он был",
+      "lemma": "immediately",
+      "sense": "immediately_1"
+    },
+    {
+      "surface": "guessed",
+      "translation": "догадался",
+      "context": "I immediately guessed that he was an",
+      "context_translation": "Я сразу догадался, что он был",
+      "lemma": "guess",
+      "sense": "guess_1"
+    },
+    {
+      "surface": "that",
+      "translation": "что",
+      "context": "guessed that he was an artist",
+      "context_translation": "догадался, что он был художником",
+      "lemma": "that",
+      "sense": "that_2"
+    },
+    {
+      "surface": "he",
+      "translation": "он",
+      "context": "guessed that he was an artist",
+      "context_translation": "догадался, что он был художником",
+      "lemma": "he",
+      "sense": "he_1"
+    },
+    {
+      "surface": "was",
+      "translation": "был",
+      "context": "that he was an artist, a French",
+      "context_translation": "что он был художником, французским",
+      "lemma": "be",
+      "sense": "be_2"
+    },
+    {
+      "surface": "an",
+      "translation": "—",
+      "context": "he was an artist, a French artist",
+      "context_translation": "он был художником, французским художником",
+      "lemma": "a",
+      "sense": "a_1"
+    },
+    {
+      "surface": "artist",
+      "translation": "художником",
+      "context": "was an artist, a French artist",
+      "context_translation": "был художником, французским художником",
+      "lemma": "artist",
+      "sense": "artist_1"
+    },
+    {
+      "surface": "a",
+      "translation": "—",
+      "context": "an artist, a French artist",
+      "context_translation": "художником, французским художником",
+      "lemma": "a",
+      "sense": "a_1"
+    },
+    {
+      "surface": "artist",
+      "translation": "художником",
+      "context": "a French artist",
+      "context_translation": "французским художником",
+      "lemma": "artist",
+      "sense": "artist_1"
+    },
+    {
+      "surface": "laughed",
+      "translation": "засмеялась",
+      "context": "Betsy laughed at me, because we had",
+      "context_translation": "Бетси засмеялась надо мной, потому что мы",
+      "lemma": "laugh",
+      "sense": "laugh_1"
+    },
+    {
+      "surface": "at",
+      "translation": "над",
+      "context": "laughed at me, because we had agreed",
+      "context_translation": "засмеялась надо мной, потому что мы договорились",
+      "lemma": "at",
+      "sense": "at_1"
+    },
+    {
+      "surface": "me",
+      "translation": "мной",
+      "context": "laughed at me, because we had agreed",
+      "context_translation": "засмеялась надо мной, потому что мы договорились",
+      "lemma": "me",
+      "sense": "me_1"
+    },
+    {
+      "surface": "because",
+      "translation": "потому что",
+      "context": "at me, because we had agreed that",
+      "context_translation": "надо мной, потому что мы договорились, что",
+      "lemma": "because",
+      "sense": "because_1"
+    },
+    {
+      "surface": "we",
+      "translation": "мы",
+      "context": "because we had agreed that people seldom",
+      "context_translation": "потому что мы договорились, что люди редко",
+      "lemma": "we",
+      "sense": "we_1"
+    },
+    {
+      "surface": "had",
+      "translation": "—",
+      "context": "because we had agreed that people seldom",
+      "context_translation": "потому что мы договорились, что люди редко",
+      "lemma": "have",
+      "sense": "have_2"
+    },
+    {
+      "surface": "agreed",
+      "translation": "договорились",
+      "context": "we had agreed that people seldom or",
+      "context_translation": "мы договорились, что люди редко или",
+      "lemma": "agree",
+      "sense": "agree_1"
+    },
+    {
+      "surface": "that",
+      "translation": "что",
+      "context": "had agreed that people seldom or never",
+      "context_translation": "договорились, что люди редко или никогда",
+      "lemma": "that",
+      "sense": "that_2"
+    },
+    {
+      "surface": "people",
+      "translation": "люди",
+      "context": "agreed that people seldom or never look",
+      "context_translation": "договорились, что люди редко или никогда не выглядят",
+      "lemma": "people",
+      "sense": "people_1"
+    },
+    {
+      "surface": "seldom",
+      "translation": "редко",
+      "context": "that people seldom or never look like",
+      "context_translation": "что люди редко или никогда не выглядят",
+      "lemma": "seldom",
+      "sense": "seldom_1"
+    },
+    {
+      "surface": "or",
+      "translation": "или",
+      "context": "people seldom or never look like what",
+      "context_translation": "люди редко или никогда не выглядят как то",
+      "lemma": "or",
+      "sense": "or_1"
+    },
+    {
+      "surface": "never",
+      "translation": "никогда",
+      "context": "seldom or never look like what they",
+      "context_translation": "редко или никогда не выглядят как то, кем они",
+      "lemma": "never",
+      "sense": "never_1"
+    },
+    {
+      "surface": "look",
+      "translation": "выглядят",
+      "context": "or never look like what they really",
+      "context_translation": "или никогда не выглядят как то, кем они на самом деле",
+      "lemma": "look",
+      "sense": "look_1"
+    },
+    {
+      "surface": "like",
+      "translation": "как",
+      "context": "never look like what they really are",
+      "context_translation": "никогда не выглядят как то, кем они на самом деле являются",
+      "lemma": "like",
+      "sense": "like_1"
+    },
+    {
+      "surface": "what",
+      "translation": "то, кем",
+      "context": "look like what they really are",
+      "context_translation": "выглядят как то, кем они на самом деле являются",
+      "lemma": "what",
+      "sense": "what_1"
+    },
+    {
+      "surface": "they",
+      "translation": "они",
+      "context": "like what they really are",
+      "context_translation": "как то, кем они на самом деле являются",
+      "lemma": "they",
+      "sense": "they_1"
+    },
+    {
+      "surface": "really",
+      "translation": "на самом деле",
+      "context": "what they really are",
+      "context_translation": "кем они на самом деле являются",
+      "lemma": "really",
+      "sense": "really_1"
+    },
+    {
+      "surface": "are",
+      "translation": "являются",
+      "context": "what they really are",
+      "context_translation": "кем они на самом деле являются",
+      "lemma": "be",
+      "sense": "be_2"
+    },
+    {
+      "surface": "She",
+      "translation": "Она",
+      "context": "She said he was probably a member",
+      "context_translation": "Она сказала, что он, вероятно, был членом",
+      "lemma": "she",
+      "sense": "she_1"
+    },
+    {
+      "surface": "said",
+      "translation": "сказала",
+      "context": "She said he was probably a member",
+      "context_translation": "Она сказала, что он, вероятно, был членом",
+      "lemma": "say",
+      "sense": "say_1"
+    },
+    {
+      "surface": "he",
+      "translation": "он",
+      "context": "said he was probably a member of",
+      "context_translation": "сказала, что он, вероятно, был членом",
+      "lemma": "he",
+      "sense": "he_1"
+    },
+    {
+      "surface": "was",
+      "translation": "был",
+      "context": "he was probably a member of the",
+      "context_translation": "он, вероятно, был членом",
+      "lemma": "be",
+      "sense": "be_2"
+    },
+    {
+      "surface": "probably",
+      "translation": "вероятно",
+      "context": "was probably a member of the British",
+      "context_translation": "вероятно, был членом Британского",
+      "lemma": "probably",
+      "sense": "probably_1"
+    },
+    {
+      "surface": "a",
+      "translation": "—",
+      "context": "probably a member of the British Parliament",
+      "context_translation": "вероятно, членом Британского парламента",
+      "lemma": "a",
+      "sense": "a_1"
+    },
+    {
+      "surface": "member",
+      "translation": "членом",
+      "context": "a member of the British Parliament",
+      "context_translation": "членом Британского парламента",
+      "lemma": "member",
+      "sense": "member_1"
+    },
+    {
+      "surface": "of",
+      "translation": "—",
+      "context": "member of the British Parliament",
+      "context_translation": "членом Британского парламента",
+      "lemma": "of",
+      "sense": "of_1"
+    },
+    {
+      "surface": "the",
+      "translation": "—",
+      "context": "member of the British Parliament",
+      "context_translation": "членом Британского парламента",
+      "lemma": "the",
+      "sense": "the_1"
+    }
+  ],
+  "senses": [
+    {
+      "lemma": "my",
+      "sense": "my_1",
+      "translation": "мой, моя, моё, мои",
+      "context": "My wife, Betsy, and I were on",
+      "context_translation": "Моя жена, Бетси, и я были на"
+    },
+    {
+      "lemma": "wife",
+      "sense": "wife_1",
+      "translation": "жена",
+      "context": "My wife, Betsy, and I were on",
+      "context_translation": "Моя жена, Бетси, и я были на"
+    },
+    {
+      "lemma": "and",
+      "sense": "and_1",
+      "translation": "и",
+      "context": "My wife, Betsy, and I were on",
+      "context_translation": "Моя жена, Бетси, и я были на"
+    },
+    {
+      "lemma": "I",
+      "sense": "I_1",
+      "translation": "я",
+      "context": "and I were on the Queen Elizabeth",
+      "context_translation": "и я были на Куин Элизабет"
+    },
+    {
+      "lemma": "be",
+      "sense": "be_1",
+      "translation": "быть, находиться",
+      "context": "and I were on the Queen Elizabeth",
+      "context_translation": "и я были на Куин Элизабет"
+    },
+    {
+      "lemma": "on",
+      "sense": "on_1",
+      "translation": "на (о местоположении)",
+      "context": "I were on the Queen Elizabeth",
+      "context_translation": "я были на Куин Элизабет"
+    },
+    {
+      "lemma": "the",
+      "sense": "the_1",
+      "translation": "определённый артикль",
+      "context": "were on the Queen Elizabeth, coming back",
+      "context_translation": "были на Куин Элизабет, возвращаясь"
+    },
+    {
+      "lemma": "come",
+      "sense": "come_1",
+      "translation": "приходить, возвращаться",
+      "context": "Queen Elizabeth, coming back from our first",
+      "context_translation": "Куин Элизабет, возвращаясь из нашей первой"
+    },
+    {
+      "lemma": "back",
+      "sense": "back_1",
+      "translation": "обратно, назад",
+      "context": "coming back from our first trip",
+      "context_translation": "возвращаясь из нашей первой поездки"
+    },
+    {
+      "lemma": "from",
+      "sense": "from_1",
+      "translation": "из, от",
+      "context": "coming back from our first trip to",
+      "context_translation": "возвращаясь из нашей первой поездки в"
+    },
+    {
+      "lemma": "our",
+      "sense": "our_1",
+      "translation": "наш, наша, наше, наши",
+      "context": "back from our first trip to Europe",
+      "context_translation": "обратно из нашей первой поездки в Европу"
+    },
+    {
+      "lemma": "first",
+      "sense": "first_1",
+      "translation": "первый",
+      "context": "from our first trip to Europe",
+      "context_translation": "из нашей первой поездки в Европу"
+    },
+    {
+      "lemma": "trip",
+      "sense": "trip_1",
+      "translation": "поездка, путешествие",
+      "context": "our first trip to Europe",
+      "context_translation": "нашей первой поездки в Европу"
+    },
+    {
+      "lemma": "to",
+      "sense": "to_1",
+      "translation": "в, к (направление)",
+      "context": "first trip to Europe",
+      "context_translation": "первой поездки в Европу"
+    },
+    {
+      "lemma": "on",
+      "sense": "on_2",
+      "translation": "в (о времени)",
+      "context": "On the first day, we played",
+      "context_translation": "В первый день мы играли"
+    },
+    {
+      "lemma": "day",
+      "sense": "day_1",
+      "translation": "день",
+      "context": "On the first day, we played our",
+      "context_translation": "В первый день мы играли в нашу"
+    },
+    {
+      "lemma": "we",
+      "sense": "we_1",
+      "translation": "мы",
+      "context": "the first day, we played our favourite",
+      "context_translation": "первый день мы играли в нашу любимую"
+    },
+    {
+      "lemma": "play",
+      "sense": "play_1",
+      "translation": "играть",
+      "context": "first day, we played our favourite game",
+      "context_translation": "первый день мы играли в нашу любимую игру"
+    },
+    {
+      "lemma": "favourite",
+      "sense": "favourite_1",
+      "translation": "любимый",
+      "context": "played our favourite game, trying to guess",
+      "context_translation": "играли в нашу любимую игру, пытаясь угадать"
+    },
+    {
+      "lemma": "game",
+      "sense": "game_1",
+      "translation": "игра",
+      "context": "our favourite game, trying to guess",
+      "context_translation": "нашу любимую игру, пытаясь угадать"
+    },
+    {
+      "lemma": "try",
+      "sense": "try_1",
+      "translation": "пытаться, стараться",
+      "context": "favourite game, trying to guess what",
+      "context_translation": "любимую игру, пытаясь угадать, кем"
+    },
+    {
+      "lemma": "to",
+      "sense": "to_2",
+      "translation": "частица инфинитива",
+      "context": "trying to guess what the different people",
+      "context_translation": "пытаясь угадать, кем были разные люди"
+    },
+    {
+      "lemma": "guess",
+      "sense": "guess_1",
+      "translation": "угадывать, догадываться",
+      "context": "trying to guess what the different people",
+      "context_translation": "пытаясь угадать, кем были разные люди"
+    },
+    {
+      "lemma": "what",
+      "sense": "what_1",
+      "translation": "что, кем",
+      "context": "to guess what the different people were",
+      "context_translation": "угадать, кем были разные люди"
+    },
+    {
+      "lemma": "different",
+      "sense": "different_1",
+      "translation": "разный, различный",
+      "context": "what the different people were",
+      "context_translation": "кем были разные люди"
+    },
+    {
+      "lemma": "people",
+      "sense": "people_1",
+      "translation": "люди",
+      "context": "the different people were",
+      "context_translation": "разные люди были"
+    },
+    {
+      "lemma": "be",
+      "sense": "be_2",
+      "translation": "быть, являться (о профессии, роли)",
+      "context": "what the different people were",
+      "context_translation": "кем были разные люди"
+    },
+    {
+      "lemma": "call",
+      "sense": "call_1",
+      "translation": "обращать (внимание)",
+      "context": "Betsy called my attention to one man",
+      "context_translation": "Бетси обратила моё внимание на одного мужчину"
+    },
+    {
+      "lemma": "attention",
+      "sense": "attention_1",
+      "translation": "внимание",
+      "context": "called my attention to one man with",
+      "context_translation": "обратила моё внимание на одного мужчину с"
+    },
+    {
+      "lemma": "to",
+      "sense": "to_3",
+      "translation": "на (направление внимания)",
+      "context": "my attention to one man with grey",
+      "context_translation": "моё внимание на одного мужчину с седыми"
+    },
+    {
+      "lemma": "one",
+      "sense": "one_1",
+      "translation": "один",
+      "context": "attention to one man with grey hair",
+      "context_translation": "внимание на одного мужчину с седыми волосами"
+    },
+    {
+      "lemma": "man",
+      "sense": "man_1",
+      "translation": "мужчина, человек",
+      "context": "to one man with grey hair",
+      "context_translation": "на одного мужчину с седыми волосами"
+    },
+    {
+      "lemma": "with",
+      "sense": "with_1",
+      "translation": "с",
+      "context": "one man with grey hair that stood",
+      "context_translation": "одного мужчину с седыми волосами, которые торчали"
+    },
+    {
+      "lemma": "grey",
+      "sense": "grey_1",
+      "translation": "серый, седой",
+      "context": "man with grey hair that stood up",
+      "context_translation": "мужчину с седыми волосами, которые торчали"
+    },
+    {
+      "lemma": "hair",
+      "sense": "hair_1",
+      "translation": "волосы",
+      "context": "with grey hair that stood up on",
+      "context_translation": "с седыми волосами, которые торчали на"
+    },
+    {
+      "lemma": "that",
+      "sense": "that_1",
+      "translation": "который, которые",
+      "context": "grey hair that stood up on his",
+      "context_translation": "седыми волосами, которые торчали на его"
+    },
+    {
+      "lemma": "stand",
+      "sense": "stand_1",
+      "translation": "стоять, торчать",
+      "context": "hair that stood up on his head",
+      "context_translation": "волосами, которые торчали на его голове"
+    },
+    {
+      "lemma": "up",
+      "sense": "up_1",
+      "translation": "вверх",
+      "context": "that stood up on his head",
+      "context_translation": "которые торчали на его голове"
+    },
+    {
+      "lemma": "his",
+      "sense": "his_1",
+      "translation": "его",
+      "context": "stood up on his head, and with",
+      "context_translation": "торчали на его голове, и с"
+    },
+    {
+      "lemma": "head",
+      "sense": "head_1",
+      "translation": "голова",
+      "context": "up on his head, and with deep",
+      "context_translation": "на его голове, и с глубокими"
+    },
+    {
+      "lemma": "deep",
+      "sense": "deep_1",
+      "translation": "глубокий",
+      "context": "and with deep dark blue eyes",
+      "context_translation": "и с глубокими тёмно-синими глазами"
+    },
+    {
+      "lemma": "dark",
+      "sense": "dark_1",
+      "translation": "тёмный",
+      "context": "with deep dark blue eyes",
+      "context_translation": "с глубокими тёмно-синими глазами"
+    },
+    {
+      "lemma": "blue",
+      "sense": "blue_1",
+      "translation": "синий, голубой",
+      "context": "deep dark blue eyes",
+      "context_translation": "глубокими тёмно-синими глазами"
+    },
+    {
+      "lemma": "eye",
+      "sense": "eye_1",
+      "translation": "глаз",
+      "context": "with deep dark blue eyes",
+      "context_translation": "с глубокими тёмно-синими глазами"
+    },
+    {
+      "lemma": "he",
+      "sense": "he_1",
+      "translation": "он",
+      "context": "He was dressed in an old sweater",
+      "context_translation": "Он был одет в старый свитер"
+    },
+    {
+      "lemma": "dress",
+      "sense": "dress_1",
+      "translation": "одевать, быть одетым",
+      "context": "He was dressed in an old sweater",
+      "context_translation": "Он был одет в старый свитер"
+    },
+    {
+      "lemma": "in",
+      "sense": "in_1",
+      "translation": "в",
+      "context": "was dressed in an old sweater and",
+      "context_translation": "был одет в старый свитер и"
+    },
+    {
+      "lemma": "a",
+      "sense": "a_1",
+      "translation": "неопределённый артикль",
+      "context": "dressed in an old sweater and trousers",
+      "context_translation": "одет в старый свитер и брюки"
+    },
+    {
+      "lemma": "old",
+      "sense": "old_1",
+      "translation": "старый",
+      "context": "in an old sweater and trousers",
+      "context_translation": "в старый свитер и брюки"
+    },
+    {
+      "lemma": "sweater",
+      "sense": "sweater_1",
+      "translation": "свитер",
+      "context": "an old sweater and trousers, and had",
+      "context_translation": "старый свитер и брюки, и на нём были"
+    },
+    {
+      "lemma": "trousers",
+      "sense": "trousers_1",
+      "translation": "брюки",
+      "context": "sweater and trousers, and had summer shoes",
+      "context_translation": "свитер и брюки, и на нём были летние туфли"
+    },
+    {
+      "lemma": "have",
+      "sense": "have_1",
+      "translation": "иметь",
+      "context": "trousers, and had summer shoes on his",
+      "context_translation": "брюки, и на нём были летние туфли"
+    },
+    {
+      "lemma": "summer",
+      "sense": "summer_1",
+      "translation": "летний, лето",
+      "context": "and had summer shoes on his feet",
+      "context_translation": "и на нём были летние туфли"
+    },
+    {
+      "lemma": "shoe",
+      "sense": "shoe_1",
+      "translation": "туфля, ботинок",
+      "context": "had summer shoes on his feet",
+      "context_translation": "на нём были летние туфли"
+    },
+    {
+      "lemma": "foot",
+      "sense": "foot_1",
+      "translation": "нога, ступня",
+      "context": "shoes on his feet",
+      "context_translation": "туфли на его ногах"
+    },
+    {
+      "lemma": "immediately",
+      "sense": "immediately_1",
+      "translation": "немедленно, сразу",
+      "context": "I immediately guessed that he was an",
+      "context_translation": "Я сразу догадался, что он был"
+    },
+    {
+      "lemma": "that",
+      "sense": "that_2",
+      "translation": "что (союз)",
+      "context": "guessed that he was an artist",
+      "context_translation": "догадался, что он был художником"
+    },
+    {
+      "lemma": "artist",
+      "sense": "artist_1",
+      "translation": "художник, артист",
+      "context": "was an artist, a French artist",
+      "context_translation": "был художником, французским художником"
+    },
+    {
+      "lemma": "laugh",
+      "sense": "laugh_1",
+      "translation": "смеяться",
+      "context": "Betsy laughed at me, because we had",
+      "context_translation": "Бетси засмеялась надо мной, потому что мы"
+    },
+    {
+      "lemma": "at",
+      "sense": "at_1",
+      "translation": "над (в выражении laugh at)",
+      "context": "laughed at me, because we had agreed",
+      "context_translation": "засмеялась надо мной, потому что мы договорились"
+    },
+    {
+      "lemma": "me",
+      "sense": "me_1",
+      "translation": "меня, мне, мной",
+      "context": "laughed at me, because we had agreed",
+      "context_translation": "засмеялась надо мной, потому что мы договорились"
+    },
+    {
+      "lemma": "because",
+      "sense": "because_1",
+      "translation": "потому что",
+      "context": "at me, because we had agreed that",
+      "context_translation": "надо мной, потому что мы договорились, что"
+    },
+    {
+      "lemma": "have",
+      "sense": "have_2",
+      "translation": "вспомогательный глагол (Past Perfect)",
+      "context": "because we had agreed that people seldom",
+      "context_translation": "потому что мы договорились, что люди редко"
+    },
+    {
+      "lemma": "agree",
+      "sense": "agree_1",
+      "translation": "соглашаться, договариваться",
+      "context": "we had agreed that people seldom or",
+      "context_translation": "мы договорились, что люди редко или"
+    },
+    {
+      "lemma": "seldom",
+      "sense": "seldom_1",
+      "translation": "редко",
+      "context": "that people seldom or never look like",
+      "context_translation": "что люди редко или никогда не выглядят"
+    },
+    {
+      "lemma": "or",
+      "sense": "or_1",
+      "translation": "или",
+      "context": "people seldom or never look like what",
+      "context_translation": "люди редко или никогда не выглядят как то"
+    },
+    {
+      "lemma": "never",
+      "sense": "never_1",
+      "translation": "никогда",
+      "context": "seldom or never look like what they",
+      "context_translation": "редко или никогда не выглядят как то, кем они"
+    },
+    {
+      "lemma": "look",
+      "sense": "look_1",
+      "translation": "выглядеть",
+      "context": "or never look like what they really",
+      "context_translation": "или никогда не выглядят как то, кем они на самом деле"
+    },
+    {
+      "lemma": "like",
+      "sense": "like_1",
+      "translation": "как, подобно",
+      "context": "never look like what they really are",
+      "context_translation": "никогда не выглядят как то, кем они на самом деле являются"
+    },
+    {
+      "lemma": "they",
+      "sense": "they_1",
+      "translation": "они",
+      "context": "like what they really are",
+      "context_translation": "как то, кем они на самом деле являются"
+    },
+    {
+      "lemma": "really",
+      "sense": "really_1",
+      "translation": "действительно, на самом деле",
+      "context": "what they really are",
+      "context_translation": "кем они на самом деле являются"
+    },
+    {
+      "lemma": "she",
+      "sense": "she_1",
+      "translation": "она",
+      "context": "She said he was probably a member",
+      "context_translation": "Она сказала, что он, вероятно, был членом"
+    },
+    {
+      "lemma": "say",
+      "sense": "say_1",
+      "translation": "говорить, сказать",
+      "context": "She said he was probably a member",
+      "context_translation": "Она сказала, что он, вероятно, был членом"
+    },
+    {
+      "lemma": "probably",
+      "sense": "probably_1",
+      "translation": "вероятно, наверное",
+      "context": "was probably a member of the British",
+      "context_translation": "вероятно, был членом Британского"
+    },
+    {
+      "lemma": "member",
+      "sense": "member_1",
+      "translation": "член, участник",
+      "context": "a member of the British Parliament",
+      "context_translation": "членом Британского парламента"
+    },
+    {
+      "lemma": "of",
+      "sense": "of_1",
+      "translation": "предлог родительного падежа",
+      "context": "member of the British Parliament",
+      "context_translation": "членом Британского парламента"
+    }
+  ],
+  "lemmas": [
+    {
+      "lemma": "my",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "wife",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "wives",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "and",
+      "type": "conjunction",
+      "forms": []
+    },
+    {
+      "lemma": "I",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "be",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "am",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "are",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "is",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "was",
+          "relation": "past_tense"
+        },
+        {
+          "form": "were",
+          "relation": "past_tense"
+        },
+        {
+          "form": "been",
+          "relation": "past_participle"
+        },
+        {
+          "form": "being",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "on",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "the",
+      "type": "article",
+      "forms": []
+    },
+    {
+      "lemma": "come",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "come",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "come",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "comes",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "came",
+          "relation": "past_tense"
+        },
+        {
+          "form": "come",
+          "relation": "past_participle"
+        },
+        {
+          "form": "coming",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "back",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "from",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "our",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "first",
+      "type": "adjective",
+      "forms": []
+    },
+    {
+      "lemma": "trip",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "trips",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "to",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "day",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "days",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "we",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "play",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "play",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "play",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "plays",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "played",
+          "relation": "past_tense"
+        },
+        {
+          "form": "played",
+          "relation": "past_participle"
+        },
+        {
+          "form": "playing",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "favourite",
+      "type": "adjective",
+      "forms": []
+    },
+    {
+      "lemma": "game",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "games",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "try",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "try",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "try",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "tries",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "tried",
+          "relation": "past_tense"
+        },
+        {
+          "form": "tried",
+          "relation": "past_participle"
+        },
+        {
+          "form": "trying",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "guess",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "guess",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "guess",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "guesses",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "guessed",
+          "relation": "past_tense"
+        },
+        {
+          "form": "guessed",
+          "relation": "past_participle"
+        },
+        {
+          "form": "guessing",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "what",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "different",
+      "type": "adjective",
+      "forms": []
+    },
+    {
+      "lemma": "people",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "peoples",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "call",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "call",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "call",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "calls",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "called",
+          "relation": "past_tense"
+        },
+        {
+          "form": "called",
+          "relation": "past_participle"
+        },
+        {
+          "form": "calling",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "attention",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "attentions",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "one",
+      "type": "numeral",
+      "forms": []
+    },
+    {
+      "lemma": "man",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "men",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "with",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "grey",
+      "type": "adjective",
+      "forms": [
+        {
+          "form": "greyer",
+          "relation": "comparative"
+        },
+        {
+          "form": "greyest",
+          "relation": "superlative"
+        }
+      ]
+    },
+    {
+      "lemma": "hair",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "hairs",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "that",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "stand",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "stand",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "stand",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "stands",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "stood",
+          "relation": "past_tense"
+        },
+        {
+          "form": "stood",
+          "relation": "past_participle"
+        },
+        {
+          "form": "standing",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "up",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "his",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "head",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "heads",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "deep",
+      "type": "adjective",
+      "forms": [
+        {
+          "form": "deeper",
+          "relation": "comparative"
+        },
+        {
+          "form": "deepest",
+          "relation": "superlative"
+        }
+      ]
+    },
+    {
+      "lemma": "dark",
+      "type": "adjective",
+      "forms": [
+        {
+          "form": "darker",
+          "relation": "comparative"
+        },
+        {
+          "form": "darkest",
+          "relation": "superlative"
+        }
+      ]
+    },
+    {
+      "lemma": "blue",
+      "type": "adjective",
+      "forms": [
+        {
+          "form": "bluer",
+          "relation": "comparative"
+        },
+        {
+          "form": "bluest",
+          "relation": "superlative"
+        }
+      ]
+    },
+    {
+      "lemma": "eye",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "eyes",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "he",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "dress",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "dress",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "dress",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "dresses",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "dressed",
+          "relation": "past_tense"
+        },
+        {
+          "form": "dressed",
+          "relation": "past_participle"
+        },
+        {
+          "form": "dressing",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "in",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "a",
+      "type": "article",
+      "forms": []
+    },
+    {
+      "lemma": "old",
+      "type": "adjective",
+      "forms": [
+        {
+          "form": "older",
+          "relation": "comparative"
+        },
+        {
+          "form": "oldest",
+          "relation": "superlative"
+        },
+        {
+          "form": "elder",
+          "relation": "comparative"
+        },
+        {
+          "form": "eldest",
+          "relation": "superlative"
+        }
+      ]
+    },
+    {
+      "lemma": "sweater",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "sweaters",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "trousers",
+      "type": "noun",
+      "forms": []
+    },
+    {
+      "lemma": "have",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "have",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "have",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "has",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "had",
+          "relation": "past_tense"
+        },
+        {
+          "form": "had",
+          "relation": "past_participle"
+        },
+        {
+          "form": "having",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "summer",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "summers",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "shoe",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "shoes",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "foot",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "feet",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "immediately",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "artist",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "artists",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "laugh",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "laugh",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "laugh",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "laughs",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "laughed",
+          "relation": "past_tense"
+        },
+        {
+          "form": "laughed",
+          "relation": "past_participle"
+        },
+        {
+          "form": "laughing",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "at",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "me",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "because",
+      "type": "conjunction",
+      "forms": []
+    },
+    {
+      "lemma": "agree",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "agree",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "agree",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "agrees",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "agreed",
+          "relation": "past_tense"
+        },
+        {
+          "form": "agreed",
+          "relation": "past_participle"
+        },
+        {
+          "form": "agreeing",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "seldom",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "or",
+      "type": "conjunction",
+      "forms": []
+    },
+    {
+      "lemma": "never",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "look",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "look",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "look",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "looks",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "looked",
+          "relation": "past_tense"
+        },
+        {
+          "form": "looked",
+          "relation": "past_participle"
+        },
+        {
+          "form": "looking",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "like",
+      "type": "preposition",
+      "forms": []
+    },
+    {
+      "lemma": "they",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "really",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "she",
+      "type": "pronoun",
+      "forms": []
+    },
+    {
+      "lemma": "say",
+      "type": "verb",
+      "forms": [
+        {
+          "form": "say",
+          "relation": "first_person_singular_present"
+        },
+        {
+          "form": "say",
+          "relation": "second_person_present"
+        },
+        {
+          "form": "says",
+          "relation": "third_person_singular_present"
+        },
+        {
+          "form": "said",
+          "relation": "past_tense"
+        },
+        {
+          "form": "said",
+          "relation": "past_participle"
+        },
+        {
+          "form": "saying",
+          "relation": "present_participle"
+        }
+      ]
+    },
+    {
+      "lemma": "probably",
+      "type": "adverb",
+      "forms": []
+    },
+    {
+      "lemma": "member",
+      "type": "noun",
+      "forms": [
+        {
+          "form": "members",
+          "relation": "plural"
+        }
+      ]
+    },
+    {
+      "lemma": "of",
+      "type": "preposition",
+      "forms": []
+    }
+  ]
+}

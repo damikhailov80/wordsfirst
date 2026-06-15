@@ -1,0 +1,40 @@
+
+[
+  {
+    "lemma": "be",
+    "type": "verb",
+    "forms": [
+      {
+        "form": "am",
+        "relation": "first_person_singular_present"
+      },
+      {
+        "form": "are",
+        "relation": "third_person_singular_present"
+      },
+      {
+        "form": "is",
+        "relation": "third_person_singular_present"
+      },
+      {
+        "form": "was",
+        "relation": "past_tense"
+      },
+      {
+        "form": "were",
+        "relation": "past_tense"
+      },
+      {
+        "form": "been",
+        "relation": "past_participle"
+      },
+      {
+        "form": "being",
+        "relation": "present_participle"
+      }
+    ]
+  }
+]
+
+
+
