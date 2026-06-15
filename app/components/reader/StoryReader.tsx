@@ -281,7 +281,8 @@ export default function StoryReader({ title, author, audioBasePath, chapters, pr
             key++;
           } else {
             const clean = token.replace(/[^a-zA-Zа-яА-ЯёЁ'.-]/g, "");
-            const vocabEntry = chapterIndex === 0 ? vocabMap?.get(clean.toLowerCase()) : undefined;
+            const vocabKey = clean.replace(/^[.\-]+|[.\-]+$/g, "").toLowerCase();
+            const vocabEntry = chapterIndex === 0 ? vocabMap?.get(vocabKey) : undefined;
             if (vocabEntry) {
               nodes.push(
                 <span
