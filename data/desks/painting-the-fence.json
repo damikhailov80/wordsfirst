@@ -1,0 +1,17 @@
+{
+  "id": "painting-the-fence",
+  "title": "Painting the Fence",
+  "sourceStory": "painting-the-fence",
+  "cards": [
+    { "id": "wife_noun_1", "lemma": "wife", "translation": "жена", "type": "noun" },
+    { "id": "trip_noun_1", "lemma": "trip", "translation": "поездка", "type": "noun" },
+    { "id": "favourite_adjective_1", "lemma": "favourite", "translation": "любимый", "type": "adjective" },
+    { "id": "attention_noun_1", "lemma": "attention", "translation": "внимание", "type": "noun" },
+    { "id": "guess_verb_1", "lemma": "guess", "translation": "угадывать", "type": "verb" },
+    { "id": "hair_noun_1", "lemma": "hair", "translation": "волосы", "type": "noun" },
+    { "id": "stand_verb_1", "lemma": "stand", "translation": "стоять", "type": "verb" },
+    { "id": "paint_verb_1", "lemma": "paint", "translation": "красить", "type": "verb" },
+    { "id": "fence_noun_1", "lemma": "fence", "translation": "забор", "type": "noun" },
+    { "id": "play_verb_1", "lemma": "play", "translation": "играть", "type": "verb" }
+  ]
+}

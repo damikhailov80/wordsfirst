@@ -1,0 +1,16 @@
+{
+  "id": "general",
+  "title": "Общая лексика",
+  "cards": [
+    { "id": "work_verb_1", "lemma": "work", "translation": "работать", "type": "verb" },
+    { "id": "find_verb_1", "lemma": "find", "translation": "находить", "type": "verb" },
+    { "id": "ask_verb_1", "lemma": "ask", "translation": "спрашивать", "type": "verb" },
+    { "id": "think_verb_1", "lemma": "think", "translation": "думать", "type": "verb" },
+    { "id": "know_verb_1", "lemma": "know", "translation": "знать", "type": "verb" },
+    { "id": "place_noun_1", "lemma": "place", "translation": "место", "type": "noun" },
+    { "id": "money_noun_1", "lemma": "money", "translation": "деньги", "type": "noun" },
+    { "id": "friend_noun_1", "lemma": "friend", "translation": "друг", "type": "noun" },
+    { "id": "happy_adjective_1", "lemma": "happy", "translation": "счастливый", "type": "adjective" },
+    { "id": "important_adjective_1", "lemma": "important", "translation": "важный", "type": "adjective" }
+  ]
+}
