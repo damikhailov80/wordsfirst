@@ -29,3 +29,11 @@ export interface SessionState {
   doneCount: number;
   finished: boolean;
 }
+
+export type DeckState =
+  | { kind: "loading" }
+  | { kind: "active"; done: number; total: number }
+  | { kind: "done" }
+  | { kind: "done-with-more" }
+  | { kind: "available" }
+  | { kind: "unavailable" };

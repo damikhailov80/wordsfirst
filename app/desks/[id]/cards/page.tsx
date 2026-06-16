@@ -5,15 +5,17 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import type { Desk, ProgressMap } from "@/lib/desks/types";
 import {
-  buildSessionQueue,
   countDueCards,
   formatLastReview,
   formatNextReview,
   getCardProgress,
   loadProgress,
-  loadSession,
   statusLabel,
 } from "@/lib/desks/progress";
+import { useDeskState } from "@/lib/desks/useDeskState";
+import SessionDoneBadge from "@/app/components/desk/SessionDoneBadge";
+import SessionActiveLabel from "@/app/components/desk/SessionActiveLabel";
+import DeskStudyButton from "@/app/components/desk/DeskStudyButton";
 
 const STATUS_COLORS: Record<string, string> = {
   new: "bg-zinc-100 text-zinc-600",
@@ -21,19 +23,10 @@ const STATUS_COLORS: Record<string, string> = {
   learned: "bg-emerald-100 text-emerald-700",
 };
 
-type DeckState =
-  | { kind: "loading" }
-  | { kind: "active"; done: number; total: number }
-  | { kind: "done" }
-  | { kind: "done-with-more" }
-  | { kind: "available" }
-  | { kind: "unavailable" };
-
 export default function CardsTablePage() {
   const { id } = useParams<{ id: string }>();
   const [desk, setDesk] = useState<Desk | null>(null);
   const [progress, setProgress] = useState<ProgressMap>({});
-  const [deckState, setDeckState] = useState<DeckState>({ kind: "loading" });
   const [error, setError] = useState(false);
 
   useEffect(() => {
@@ -44,18 +37,7 @@ export default function CardsTablePage() {
       })
       .then((d) => {
         setDesk(d);
-        const prog = loadProgress(d.id);
-        setProgress(prog);
-        const session = loadSession(d.id);
-        const due = buildSessionQueue(d.cards, prog);
-        if (session && !session.finished) {
-          const total = session.remainingCardIds.length + session.doneCount;
-          setDeckState({ kind: "active", done: session.doneCount, total });
-        } else if (session?.finished) {
-          setDeckState(due.length > 0 ? { kind: "done-with-more" } : { kind: "done" });
-        } else {
-          setDeckState(due.length > 0 ? { kind: "available" } : { kind: "unavailable" });
-        }
+        setProgress(loadProgress(d.id));
       })
       .catch(() => setError(true));
   }, [id]);
@@ -76,6 +58,11 @@ export default function CardsTablePage() {
     );
   }
 
+  return <CardsTableContent desk={desk} progress={progress} />;
+}
+
+function CardsTableContent({ desk, progress }: { desk: Desk; progress: ProgressMap }) {
+  const { deckState } = useDeskState(desk.id, desk.cards);
   const dueCount = countDueCards(desk.cards, progress);
 
   return (
@@ -90,45 +77,12 @@ export default function CardsTablePage() {
               ← К колодам
             </Link>
             <div className="flex items-center gap-2 mt-2">
-              <h1 className="text-2xl font-semibold text-zinc-900">
-                {desk.title}
-              </h1>
-              {(deckState.kind === "done" || deckState.kind === "done-with-more") && (
-                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-xs font-medium">
-                  ✓ Сессия выполнена
-                </span>
-              )}
+              <h1 className="text-2xl font-semibold text-zinc-900">{desk.title}</h1>
+              <SessionDoneBadge deckState={deckState} />
             </div>
-            {deckState.kind === "active" && (
-              <p className="text-xs text-amber-600 font-medium mt-1.5">
-                Сессия в процессе · {deckState.done} / {deckState.total}
-              </p>
-            )}
+            <SessionActiveLabel deckState={deckState} />
           </div>
-          {deckState.kind === "active" && (
-            <Link
-              href={`/desks/${desk.id}`}
-              className="px-4 py-2 rounded-xl bg-amber-400 text-white text-sm font-semibold hover:bg-amber-500 transition-colors"
-            >
-              Продолжить
-            </Link>
-          )}
-          {deckState.kind === "done-with-more" && (
-            <Link
-              href={`/desks/${desk.id}`}
-              className="px-4 py-2 rounded-xl bg-amber-400 text-white text-sm font-semibold hover:bg-amber-500 transition-colors"
-            >
-              Учить ещё
-            </Link>
-          )}
-          {(deckState.kind === "available" || deckState.kind === "loading") && (
-            <Link
-              href={`/desks/${desk.id}`}
-              className="px-4 py-2 rounded-xl bg-amber-400 text-white text-sm font-semibold hover:bg-amber-500 transition-colors"
-            >
-              Учить
-            </Link>
-          )}
+          <DeskStudyButton deskId={desk.id} deckState={deckState} className="px-4 py-2" />
         </div>
 
         <div className="flex gap-6 mb-6">
@@ -147,21 +101,11 @@ export default function CardsTablePage() {
           <table className="w-full text-sm">
             <thead>
               <tr className="border-b border-zinc-100">
-                <th className="text-left px-5 py-3 text-zinc-500 font-medium">
-                  Слово
-                </th>
-                <th className="text-left px-5 py-3 text-zinc-500 font-medium">
-                  Статус
-                </th>
-                <th className="text-right px-5 py-3 text-zinc-500 font-medium">
-                  Повторений
-                </th>
-                <th className="text-right px-5 py-3 text-zinc-500 font-medium">
-                  Последний раз
-                </th>
-                <th className="text-right px-5 py-3 text-zinc-500 font-medium">
-                  Следующее
-                </th>
+                <th className="text-left px-5 py-3 text-zinc-500 font-medium">Слово</th>
+                <th className="text-left px-5 py-3 text-zinc-500 font-medium">Статус</th>
+                <th className="text-right px-5 py-3 text-zinc-500 font-medium">Повторений</th>
+                <th className="text-right px-5 py-3 text-zinc-500 font-medium">Последний раз</th>
+                <th className="text-right px-5 py-3 text-zinc-500 font-medium">Следующее</th>
               </tr>
             </thead>
             <tbody>
@@ -172,9 +116,7 @@ export default function CardsTablePage() {
                     key={card.id}
                     className={i < desk.cards.length - 1 ? "border-b border-zinc-50" : ""}
                   >
-                    <td className="px-5 py-3 font-medium text-zinc-900">
-                      {card.lemma}
-                    </td>
+                    <td className="px-5 py-3 font-medium text-zinc-900">{card.lemma}</td>
                     <td className="px-5 py-3">
                       <span
                         className={`inline-block px-2 py-0.5 rounded-full text-xs font-medium ${STATUS_COLORS[p.status]}`}
@@ -182,9 +124,7 @@ export default function CardsTablePage() {
                         {statusLabel(p.status)}
                       </span>
                     </td>
-                    <td className="px-5 py-3 text-right text-zinc-500">
-                      {p.repetitions}
-                    </td>
+                    <td className="px-5 py-3 text-right text-zinc-500">{p.repetitions}</td>
                     <td className="px-5 py-3 text-right text-zinc-500">
                       {formatLastReview(p.lastReview)}
                     </td>
