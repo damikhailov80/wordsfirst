@@ -85,6 +85,7 @@ export function applyGood(
       interval,
       repetitions: current.repetitions + 1,
       nextReview: Date.now() + interval * 86_400_000,
+      lastReview: Date.now(),
     },
   };
 }
@@ -100,8 +101,17 @@ export function applyLearned(
       interval: 0,
       repetitions: getCardProgress(cardId, progress).repetitions,
       nextReview: 0,
+      lastReview: Date.now(),
     },
   };
+}
+
+export function countDueCards(cards: DeskCard[], progress: ProgressMap): number {
+  const now = Date.now();
+  return cards.filter((card) => {
+    const p = getCardProgress(card.id, progress);
+    return p.status !== "learned" && p.nextReview <= now;
+  }).length;
 }
 
 export function buildSessionQueue(
@@ -114,6 +124,16 @@ export function buildSessionQueue(
     return p.status !== "learned" && p.nextReview <= now;
   });
   return due.slice(0, SESSION_SIZE);
+}
+
+export function formatLastReview(lastReview: number | undefined): string {
+  if (!lastReview) return "—";
+  const date = new Date(lastReview);
+  const now = new Date();
+  const diffDays = Math.floor((now.getTime() - date.getTime()) / 86_400_000);
+  if (diffDays === 0) return "сегодня";
+  if (diffDays === 1) return "вчера";
+  return date.toLocaleDateString("ru-RU", { day: "numeric", month: "short" });
 }
 
 export function formatNextReview(nextReview: number): string {

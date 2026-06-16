@@ -19,6 +19,7 @@ export interface CardProgress {
   interval: number;
   repetitions: number;
   nextReview: number;
+  lastReview?: number;
 }
 
 export type ProgressMap = Record<string, CardProgress>;

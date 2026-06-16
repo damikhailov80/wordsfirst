@@ -29,6 +29,7 @@ export default function StudySession({ desk }: StudySessionProps) {
   const [sessionTotal, setSessionTotal] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const [finished, setFinished] = useState(false);
+  const [hasMoreCards, setHasMoreCards] = useState(false);
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -37,7 +38,7 @@ export default function StudySession({ desk }: StudySessionProps) {
 
     const existingSession = loadSession(desk.id);
 
-    if (existingSession) {
+    if (existingSession && !existingSession.finished) {
       const restoredQueue = existingSession.remainingCardIds
         .map((id) => cardById[id])
         .filter((c): c is DeskCard => Boolean(c));
@@ -45,7 +46,6 @@ export default function StudySession({ desk }: StudySessionProps) {
       setQueue(restoredQueue);
       setDoneCount(existingSession.doneCount);
       setSessionTotal(total);
-      setFinished(existingSession.finished);
     } else {
       const initialQueue = buildSessionQueue(desk.cards, savedProgress);
       const total = initialQueue.length;
@@ -53,6 +53,7 @@ export default function StudySession({ desk }: StudySessionProps) {
       setSessionTotal(total);
       const isFinished = total === 0;
       setFinished(isFinished);
+      if (isFinished) setHasMoreCards(false);
       saveSession(desk.id, {
         remainingCardIds: initialQueue.map((c) => c.id),
         doneCount: 0,
@@ -81,7 +82,10 @@ export default function StudySession({ desk }: StudySessionProps) {
       setRevealed(false);
       setQueue(newQueue);
       setDoneCount(newDone);
-      if (isFinished) setFinished(true);
+      if (isFinished) {
+        setFinished(true);
+        setHasMoreCards(buildSessionQueue(desk.cards, updatedProgress).length > 0);
+      }
     },
     [desk.id]
   );
@@ -163,12 +167,14 @@ export default function StudySession({ desk }: StudySessionProps) {
             </p>
           </div>
           <div className="flex flex-col gap-3 w-full">
-            <button
-              onClick={handleStudyMore}
-              className="w-full py-3 text-center rounded-xl bg-amber-400 text-white font-semibold text-sm hover:bg-amber-500 transition-colors"
-            >
-              Учить ещё
-            </button>
+            {hasMoreCards && (
+              <button
+                onClick={handleStudyMore}
+                className="w-full py-3 text-center rounded-xl bg-amber-400 text-white font-semibold text-sm hover:bg-amber-500 transition-colors"
+              >
+                Учить ещё
+              </button>
+            )}
             <Link
               href={`/desks/${desk.id}/cards`}
               className="w-full py-3 text-center rounded-xl border border-zinc-200 text-zinc-700 font-medium text-sm hover:bg-zinc-50 transition-colors"
