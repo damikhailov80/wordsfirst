@@ -31,6 +31,7 @@ export default function StudySession({ desk }: StudySessionProps) {
   const [finished, setFinished] = useState(false);
   const [hasMoreCards, setHasMoreCards] = useState(false);
   const [loaded, setLoaded] = useState(false);
+  const [showExitConfirm, setShowExitConfirm] = useState(false);
 
   useEffect(() => {
     const savedProgress = loadProgress(desk.id);
@@ -119,11 +120,21 @@ export default function StudySession({ desk }: StudySessionProps) {
     });
   }, [currentCard, desk.id, doneCount]);
 
-  const handleExit = useCallback(() => {
-    if (doneCount === 0 || confirm("Выйти из сессии? Прогресс сохранён.")) {
+  const handleExitRequest = useCallback(() => {
+    if (doneCount === 0) {
       router.push("/desks");
+    } else {
+      setShowExitConfirm(true);
     }
   }, [doneCount, router]);
+
+  const handleExitConfirm = useCallback(() => {
+    router.push("/desks");
+  }, [router]);
+
+  const handleExitCancel = useCallback(() => {
+    setShowExitConfirm(false);
+  }, []);
 
   const handleStudyMore = useCallback(() => {
     clearSession(desk.id);
@@ -196,14 +207,36 @@ export default function StudySession({ desk }: StudySessionProps) {
   return (
     <div className="flex flex-col flex-1 bg-zinc-50 min-h-screen">
       <div className="w-full max-w-md mx-auto px-6 py-12 flex flex-col gap-8">
-        <div className="flex items-center justify-between">
-          <p className="text-sm font-medium text-zinc-700">{desk.title}</p>
-          <button
-            onClick={handleExit}
-            className="text-sm text-zinc-400 hover:text-zinc-900 transition-colors"
-          >
-            Завершить
-          </button>
+        <div className="flex items-center justify-between min-h-[28px]">
+          {showExitConfirm ? (
+            <>
+              <p className="text-sm text-zinc-500">Прогресс сохранён. Выйти?</p>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={handleExitCancel}
+                  className="text-sm text-zinc-400 hover:text-zinc-700 transition-colors"
+                >
+                  Остаться
+                </button>
+                <button
+                  onClick={handleExitConfirm}
+                  className="text-sm font-medium text-rose-500 hover:text-rose-700 transition-colors"
+                >
+                  Выйти
+                </button>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-sm font-medium text-zinc-700">{desk.title}</p>
+              <button
+                onClick={handleExitRequest}
+                className="text-sm text-zinc-400 hover:text-zinc-900 transition-colors"
+              >
+                Завершить
+              </button>
+            </>
+          )}
         </div>
 
         <SessionProgress done={doneCount} total={sessionTotal} />
